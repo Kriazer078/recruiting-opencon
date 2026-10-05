@@ -14,6 +14,7 @@
   color: #fff;
 }
 
+/* per-photo crop: a left-anchored zoom moves the person to the right of the text column */
 .cover__img {
   position: absolute;
   inset: 0;
@@ -21,7 +22,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 72% 28%;
+  object-position: var(--cover-pos, 50% 40%);
+  transform: scale(var(--cover-zoom, 1));
+  transform-origin: 0% var(--cover-origin-y, 40%);
 }
 
 /* ink, not brand colour: the photo stays a photo, the text gets its contrast */
@@ -134,7 +137,8 @@
     position: relative;
     z-index: 0;
     height: 230px;
-    object-position: 74% 18%;
+    object-position: var(--cover-pos-phone, 60% 30%);
+    transform: none;
   }
 
   .cover__shade {

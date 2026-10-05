@@ -100,6 +100,7 @@ export function App() {
         <Hero
           ref={searchRef}
           variant={variant}
+          photo={readParam('photo') ?? undefined}
           role={role}
           onRole={changeRole}
           query={draft}

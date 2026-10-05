@@ -22,8 +22,8 @@ export function isHeroVariant(v: string | null): v is HeroVariant {
   return heroVariants.some((h) => h.id === v);
 }
 
-export const Hero = forwardRef<HTMLFormElement, HeroProps & { variant: HeroVariant }>(function Hero(
-  { variant, ...props },
+export const Hero = forwardRef<HTMLFormElement, HeroProps & { variant: HeroVariant; photo?: string }>(function Hero(
+  { variant, photo, ...props },
   ref,
 ) {
   switch (variant) {
@@ -34,7 +34,7 @@ export const Hero = forwardRef<HTMLFormElement, HeroProps & { variant: HeroVaria
     case 'split':
       return <HeroSplit ref={ref} {...props} />;
     default:
-      return <HeroCover ref={ref} {...props} />;
+      return <HeroCover ref={ref} photo={photo} {...props} />;
   }
 });
 
