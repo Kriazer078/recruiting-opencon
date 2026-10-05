@@ -1,0 +1,690 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-05T11:55:40+00:00",
+  "title": "Design System: Open Consulting",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Белый лист",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 0.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0.0)",
+          "oklch(26.4% 0.000 0.0)",
+          "oklch(37.9% 0.000 0.0)",
+          "oklch(49.3% 0.000 0.0)",
+          "oklch(60.7% 0.000 0.0)",
+          "oklch(72.1% 0.000 0.0)",
+          "oklch(83.6% 0.000 0.0)",
+          "oklch(95.0% 0.000 0.0)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Холодный туман",
+        "canonical": "#f4f5f7",
+        "oklch": "oklch(97.0% 0.003 264.5)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 264.5)",
+          "oklch(26.4% 0.003 264.5)",
+          "oklch(37.9% 0.003 264.5)",
+          "oklch(49.3% 0.003 264.5)",
+          "oklch(60.7% 0.003 264.5)",
+          "oklch(72.1% 0.003 264.5)",
+          "oklch(83.6% 0.003 264.5)",
+          "oklch(95.0% 0.003 264.5)"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Серый жетон",
+        "canonical": "#eceef1",
+        "oklch": "oklch(94.8% 0.005 258.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.005 258.3)",
+          "oklch(26.4% 0.005 258.3)",
+          "oklch(37.9% 0.005 258.3)",
+          "oklch(49.3% 0.005 258.3)",
+          "oklch(60.7% 0.005 258.3)",
+          "oklch(72.1% 0.005 258.3)",
+          "oklch(83.6% 0.005 258.3)",
+          "oklch(95.0% 0.005 258.3)"
+        ]
+      },
+      "surface-3": {
+        "role": "neutral",
+        "displayName": "Нажатый серый",
+        "canonical": "#e2e5e9",
+        "oklch": "oklch(92.1% 0.006 255.5)",
+        "tonalRamp": [
+          "oklch(15.0% 0.006 255.5)",
+          "oklch(26.4% 0.006 255.5)",
+          "oklch(37.9% 0.006 255.5)",
+          "oklch(49.3% 0.006 255.5)",
+          "oklch(60.7% 0.006 255.5)",
+          "oklch(72.1% 0.006 255.5)",
+          "oklch(83.6% 0.006 255.5)",
+          "oklch(95.0% 0.006 255.5)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Волосяная линия",
+        "canonical": "#e3e6ea",
+        "oklch": "oklch(92.4% 0.006 255.5)",
+        "tonalRamp": [
+          "oklch(15.0% 0.006 255.5)",
+          "oklch(26.4% 0.006 255.5)",
+          "oklch(37.9% 0.006 255.5)",
+          "oklch(49.3% 0.006 255.5)",
+          "oklch(60.7% 0.006 255.5)",
+          "oklch(72.1% 0.006 255.5)",
+          "oklch(83.6% 0.006 255.5)",
+          "oklch(95.0% 0.006 255.5)"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Твёрдая линия",
+        "canonical": "#c9ced5",
+        "oklch": "oklch(85.0% 0.011 256.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.011 256.7)",
+          "oklch(26.4% 0.011 256.7)",
+          "oklch(37.9% 0.011 256.7)",
+          "oklch(49.3% 0.011 256.7)",
+          "oklch(60.7% 0.011 256.7)",
+          "oklch(72.1% 0.011 256.7)",
+          "oklch(83.6% 0.011 256.7)",
+          "oklch(95.0% 0.011 256.7)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Почти чёрный",
+        "canonical": "#121417",
+        "oklch": "oklch(19.0% 0.007 258.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 258.4)",
+          "oklch(26.4% 0.007 258.4)",
+          "oklch(37.9% 0.007 258.4)",
+          "oklch(49.3% 0.007 258.4)",
+          "oklch(60.7% 0.007 258.4)",
+          "oklch(72.1% 0.007 258.4)",
+          "oklch(83.6% 0.007 258.4)",
+          "oklch(95.0% 0.007 258.4)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Графит",
+        "canonical": "#464c55",
+        "oklch": "oklch(41.4% 0.017 258.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.017 258.4)",
+          "oklch(26.4% 0.017 258.4)",
+          "oklch(37.9% 0.017 258.4)",
+          "oklch(49.3% 0.017 258.4)",
+          "oklch(60.7% 0.017 258.4)",
+          "oklch(72.1% 0.017 258.4)",
+          "oklch(83.6% 0.017 258.4)",
+          "oklch(95.0% 0.017 258.4)"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Пепел",
+        "canonical": "#5f6570",
+        "oklch": "oklch(50.5% 0.019 262.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.019 262.7)",
+          "oklch(26.4% 0.019 262.7)",
+          "oklch(37.9% 0.019 262.7)",
+          "oklch(49.3% 0.019 262.7)",
+          "oklch(60.7% 0.019 262.7)",
+          "oklch(72.1% 0.019 262.7)",
+          "oklch(83.6% 0.019 262.7)",
+          "oklch(95.0% 0.019 262.7)"
+        ]
+      },
+      "red": {
+        "role": "primary",
+        "displayName": "Сигнальный красный",
+        "canonical": "#d42a20",
+        "oklch": "oklch(56.5% 0.206 29.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.063 29.0)",
+          "oklch(26.4% 0.109 29.0)",
+          "oklch(37.9% 0.155 29.0)",
+          "oklch(49.3% 0.202 29.0)",
+          "oklch(60.7% 0.206 29.0)",
+          "oklch(72.1% 0.174 29.0)",
+          "oklch(83.6% 0.091 29.0)",
+          "oklch(95.0% 0.025 29.0)"
+        ]
+      },
+      "red-hover": {
+        "role": "primary",
+        "displayName": "Красный глубже",
+        "canonical": "#b3221a",
+        "oklch": "oklch(49.8% 0.182 28.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.063 28.9)",
+          "oklch(26.4% 0.109 28.9)",
+          "oklch(37.9% 0.155 28.9)",
+          "oklch(49.3% 0.182 28.9)",
+          "oklch(60.7% 0.182 28.9)",
+          "oklch(72.1% 0.173 28.9)",
+          "oklch(83.6% 0.091 28.9)",
+          "oklch(95.0% 0.025 28.9)"
+        ]
+      },
+      "red-press": {
+        "role": "primary",
+        "displayName": "Красный кирпич",
+        "canonical": "#9a1c15",
+        "oklch": "oklch(44.6% 0.162 28.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.063 28.9)",
+          "oklch(26.4% 0.109 28.9)",
+          "oklch(37.9% 0.155 28.9)",
+          "oklch(49.3% 0.162 28.9)",
+          "oklch(60.7% 0.162 28.9)",
+          "oklch(72.1% 0.162 28.9)",
+          "oklch(83.6% 0.091 28.9)",
+          "oklch(95.0% 0.025 28.9)"
+        ]
+      },
+      "red-panel": {
+        "role": "primary",
+        "displayName": "Красное поле вывески",
+        "canonical": "#c9241b",
+        "oklch": "oklch(54.0% 0.200 29.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.063 29.0)",
+          "oklch(26.4% 0.109 29.0)",
+          "oklch(37.9% 0.155 29.0)",
+          "oklch(49.3% 0.200 29.0)",
+          "oklch(60.7% 0.200 29.0)",
+          "oklch(72.1% 0.174 29.0)",
+          "oklch(83.6% 0.091 29.0)",
+          "oklch(95.0% 0.025 29.0)"
+        ]
+      },
+      "red-panel-2": {
+        "role": "primary",
+        "displayName": "Красное поле, тень",
+        "canonical": "#b51f17",
+        "oklch": "oklch(49.9% 0.186 29.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.063 29.0)",
+          "oklch(26.4% 0.109 29.0)",
+          "oklch(37.9% 0.155 29.0)",
+          "oklch(49.3% 0.186 29.0)",
+          "oklch(60.7% 0.186 29.0)",
+          "oklch(72.1% 0.174 29.0)",
+          "oklch(83.6% 0.091 29.0)",
+          "oklch(95.0% 0.025 29.0)"
+        ]
+      },
+      "red-ink": {
+        "role": "primary",
+        "displayName": "Красные чернила",
+        "canonical": "#b3221a",
+        "oklch": "oklch(49.8% 0.182 28.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.063 28.9)",
+          "oklch(26.4% 0.109 28.9)",
+          "oklch(37.9% 0.155 28.9)",
+          "oklch(49.3% 0.182 28.9)",
+          "oklch(60.7% 0.182 28.9)",
+          "oklch(72.1% 0.173 28.9)",
+          "oklch(83.6% 0.091 28.9)",
+          "oklch(95.0% 0.025 28.9)"
+        ]
+      },
+      "red-soft": {
+        "role": "primary",
+        "displayName": "Розовая пудра",
+        "canonical": "#fdecea",
+        "oklch": "oklch(95.6% 0.019 25.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.019 25.6)",
+          "oklch(26.4% 0.019 25.6)",
+          "oklch(37.9% 0.019 25.6)",
+          "oklch(49.3% 0.019 25.6)",
+          "oklch(60.7% 0.019 25.6)",
+          "oklch(72.1% 0.019 25.6)",
+          "oklch(83.6% 0.019 25.6)",
+          "oklch(95.0% 0.019 25.6)"
+        ]
+      },
+      "logo-red": {
+        "role": "primary",
+        "displayName": "Красный логотипа (только в логотипе)",
+        "canonical": "#ec2a20",
+        "oklch": "oklch(60.8% 0.228 29.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.063 29.0)",
+          "oklch(26.4% 0.109 29.0)",
+          "oklch(37.9% 0.155 29.0)",
+          "oklch(49.3% 0.202 29.0)",
+          "oklch(60.7% 0.228 29.0)",
+          "oklch(72.1% 0.174 29.0)",
+          "oklch(83.6% 0.091 29.0)",
+          "oklch(95.0% 0.025 29.0)"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "Подтверждающий зелёный",
+        "canonical": "#127a45",
+        "oklch": "oklch(51.1% 0.122 154.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.039 154.3)",
+          "oklch(26.4% 0.067 154.3)",
+          "oklch(37.9% 0.095 154.3)",
+          "oklch(49.3% 0.122 154.3)",
+          "oklch(60.7% 0.122 154.3)",
+          "oklch(72.1% 0.122 154.3)",
+          "oklch(83.6% 0.122 154.3)",
+          "oklch(95.0% 0.080 154.3)"
+        ]
+      },
+      "green-soft": {
+        "role": "secondary",
+        "displayName": "Мятная плашка",
+        "canonical": "#e6f4ec",
+        "oklch": "oklch(95.5% 0.018 161.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.018 161.1)",
+          "oklch(26.4% 0.018 161.1)",
+          "oklch(37.9% 0.018 161.1)",
+          "oklch(49.3% 0.018 161.1)",
+          "oklch(60.7% 0.018 161.1)",
+          "oklch(72.1% 0.018 161.1)",
+          "oklch(83.6% 0.018 161.1)",
+          "oklch(95.0% 0.018 161.1)"
+        ]
+      },
+      "amber-ink": {
+        "role": "tertiary",
+        "displayName": "Янтарные чернила",
+        "canonical": "#6b4a00",
+        "oklch": "oklch(43.4% 0.090 79.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.032 79.3)",
+          "oklch(26.4% 0.055 79.3)",
+          "oklch(37.9% 0.079 79.3)",
+          "oklch(49.3% 0.090 79.3)",
+          "oklch(60.7% 0.090 79.3)",
+          "oklch(72.1% 0.090 79.3)",
+          "oklch(83.6% 0.090 79.3)",
+          "oklch(95.0% 0.045 79.3)"
+        ]
+      },
+      "amber-soft": {
+        "role": "tertiary",
+        "displayName": "Янтарная плашка",
+        "canonical": "#fff1cc",
+        "oklch": "oklch(96.0% 0.050 89.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.032 89.8)",
+          "oklch(26.4% 0.050 89.8)",
+          "oklch(37.9% 0.050 89.8)",
+          "oklch(49.3% 0.050 89.8)",
+          "oklch(60.7% 0.050 89.8)",
+          "oklch(72.1% 0.050 89.8)",
+          "oklch(83.6% 0.050 89.8)",
+          "oklch(95.0% 0.050 89.8)"
+        ]
+      },
+      "on-red": {
+        "role": "neutral",
+        "displayName": "Белый на красном",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 0.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0.0)",
+          "oklch(26.4% 0.000 0.0)",
+          "oklch(37.9% 0.000 0.0)",
+          "oklch(49.3% 0.000 0.0)",
+          "oklch(60.7% 0.000 0.0)",
+          "oklch(72.1% 0.000 0.0)",
+          "oklch(83.6% 0.000 0.0)",
+          "oklch(95.0% 0.000 0.0)"
+        ]
+      },
+      "on-red-2": {
+        "role": "neutral",
+        "displayName": "Приглушённый белый на красном",
+        "canonical": "rgb(255 255 255 / 0.86)",
+        "tonalRamp": [
+          "rgb(255 255 255 / 0.30)",
+          "rgb(255 255 255 / 0.42)",
+          "rgb(255 255 255 / 0.52)",
+          "rgb(255 255 255 / 0.62)",
+          "rgb(255 255 255 / 0.72)",
+          "rgb(255 255 255 / 0.78)",
+          "rgb(255 255 255 / 0.86)",
+          "rgb(255 255 255 / 1.00)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Только заголовок hero; 2.5rem при ≤1179px, 2rem при ≤767px."
+      },
+      "headline-panel": {
+        "displayName": "Headline · панель",
+        "purpose": "Заголовок тёмной панели для отелей; 1.75rem на телефоне."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Заголовки секций; 1.5rem на телефоне."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Заголовки карточек вакансий и новостей, шагов найма."
+      },
+      "salary": {
+        "displayName": "Salary",
+        "purpose": "Сумма в лирах в карточке вакансии, табличные цифры."
+      },
+      "body-lg": {
+        "displayName": "Body large",
+        "purpose": "Подводка hero."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Основной текст, подводки до 62ch."
+      },
+      "body-sm": {
+        "displayName": "Body small",
+        "purpose": "Мета карточек, полоса аудиторий, подвал, быстрые чипы."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Кнопки и ссылки «Все …»."
+      },
+      "label-lg": {
+        "displayName": "Label large",
+        "purpose": "Большие кнопки и «Найти»."
+      },
+      "nav": {
+        "displayName": "Nav",
+        "purpose": "Пункты шапки и фильтры профессий."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Даты, плашки условий, примечания."
+      },
+      "micro": {
+        "displayName": "Micro",
+        "purpose": "Метка «Пример», подпись «Реклама», автор фото."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-card",
+        "value": "0 1px 2px rgb(18 20 23 / 0.06), 0 8px 24px -12px rgb(18 20 23 / 0.18)",
+        "purpose": "Вакансии и строки профессий/регионов при наведении."
+      },
+      {
+        "name": "shadow-float",
+        "value": "0 2px 4px rgb(18 20 23 / 0.08), 0 18px 40px -16px rgb(18 20 23 / 0.38)",
+        "purpose": "Строка поиска hero поверх шва панели и фото."
+      },
+      {
+        "name": "shadow-pop",
+        "value": "0 4px 12px rgb(18 20 23 / 0.1), 0 24px 56px -20px rgb(18 20 23 / 0.35)",
+        "purpose": "Меню языка и диалог «Следующий шаг»."
+      },
+      {
+        "name": "segment-selected",
+        "value": "0 1px 2px rgb(18 20 23 / 0.12)",
+        "purpose": "Выбранная роль в мобильном меню."
+      },
+      {
+        "name": "audience-active",
+        "value": "inset 0 -2px 0 var(--red)",
+        "purpose": "Красная черта под активной аудиторией в верхней полосе."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 2px solid var(--ink); outline-offset: 2px",
+        "purpose": "Фокус по умолчанию; на красном и тёмном поле обводка белая."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Единственная кривая для всех переходов."
+      },
+      {
+        "name": "t-fast",
+        "value": "150ms",
+        "purpose": "Смена цвета, фона, границы, тени у кнопок, чипов, ссылок."
+      },
+      {
+        "name": "t-mid",
+        "value": "220ms",
+        "purpose": "Появление слоёв: компактный поиск в шапке, мобильная панель, диалог, тень карточки, поворот стрелки FAQ."
+      },
+      {
+        "name": "sheet-in",
+        "value": "from { transform: translateX(24px); opacity: 0 } · var(--t-mid) var(--ease-out)",
+        "purpose": "Мобильная панель выезжает справа."
+      },
+      {
+        "name": "ns-rise",
+        "value": "from { opacity: 0; translate: -50% calc(-50% + 12px) } · var(--t-mid) var(--ease-out)",
+        "purpose": "Диалог поднимается на 12px."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "--t-fast: 0ms; --t-mid: 0ms; scroll-behavior: auto",
+        "purpose": "prefers-reduced-motion: reduce отключает движение."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "desktop-narrow",
+        "value": "1179px",
+        "purpose": "max-width: hero 2.5rem, поиск выходит на 96px, компактный поиск в шапке скрыт."
+      },
+      {
+        "name": "tablet",
+        "value": "1023px",
+        "purpose": "max-width: навигация в мобильную панель, вакансии в 2 колонки, шаги вертикально."
+      },
+      {
+        "name": "hero-stack",
+        "value": "899px",
+        "purpose": "max-width: фото hero над красным полем."
+      },
+      {
+        "name": "phone",
+        "value": "767px",
+        "purpose": "max-width: нет полосы аудиторий, переключатель ролей в hero, поиск в столбец, секции 40px."
+      },
+      {
+        "name": "phone-cards",
+        "value": "639px",
+        "purpose": "max-width: вакансии в 1 колонку."
+      },
+      {
+        "name": "phone-small",
+        "value": "600px",
+        "purpose": "max-width: 3 вакансии на страницу, подпись фото в верхний левый угол."
+      },
+      {
+        "name": "phone-narrow",
+        "value": "479px",
+        "purpose": "max-width: подвал в 1 колонку."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Красная кнопка",
+      "kind": "button",
+      "refersTo": "button-red",
+      "description": "Главное действие: «Создать анкету», «Откликнуться», «Разместить вакансию». Одна-две на экран.",
+      "html": "<button class=\"ds-btn-red\" type=\"button\">Создать анкету</button>",
+      "css": ".ds-btn-red { font-family: var(--font, 'Onest Variable', 'Segoe UI', Roboto, Arial, sans-serif); display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border: 1px solid transparent; border-radius: var(--r-12, 12px); font-size: 0.9375rem; font-weight: 600; line-height: 1.2; white-space: nowrap; cursor: pointer; transition: background-color var(--t-fast, 150ms) var(--ease-out, cubic-bezier(0.16,1,0.3,1)), border-color var(--t-fast, 150ms) var(--ease-out, cubic-bezier(0.16,1,0.3,1)); background: var(--red, #d42a20); color: var(--on-red, #fff); } .ds-btn-red:hover { background: var(--red-hover, #b3221a); } .ds-btn-red:active { background: var(--red-press, #9a1c15); } .ds-btn-red:focus-visible { outline: 2px solid var(--ink, #121417); outline-offset: 2px; }"
+    },
+    {
+      "name": "Чёрная кнопка",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "«Найти» в строке поиска и «Понятно» в диалоге: действие на красном поле.",
+      "html": "<button class=\"ds-btn-ink\" type=\"button\">Найти</button>",
+      "css": ".ds-btn-ink { font-family: var(--font, 'Onest Variable', 'Segoe UI', Roboto, Arial, sans-serif); display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border: 1px solid transparent; border-radius: var(--r-12, 12px); font-size: 0.9375rem; font-weight: 600; line-height: 1.2; white-space: nowrap; cursor: pointer; transition: background-color var(--t-fast, 150ms) var(--ease-out, cubic-bezier(0.16,1,0.3,1)), border-color var(--t-fast, 150ms) var(--ease-out, cubic-bezier(0.16,1,0.3,1)); background: var(--ink, #121417); color: #fff; } .ds-btn-ink:hover { background: #2a2e34; } .ds-btn-ink:focus-visible { outline: 2px solid var(--ink, #121417); outline-offset: 2px; }"
+    },
+    {
+      "name": "Мягкая кнопка",
+      "kind": "button",
+      "refersTo": "button-soft",
+      "description": "Второстепенное действие в шапке: «Войти».",
+      "html": "<button class=\"ds-btn-soft\" type=\"button\">Войти</button>",
+      "css": ".ds-btn-soft { font-family: var(--font, 'Onest Variable', 'Segoe UI', Roboto, Arial, sans-serif); display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border: 1px solid transparent; border-radius: var(--r-12, 12px); font-size: 0.9375rem; font-weight: 600; line-height: 1.2; white-space: nowrap; cursor: pointer; transition: background-color var(--t-fast, 150ms) var(--ease-out, cubic-bezier(0.16,1,0.3,1)), border-color var(--t-fast, 150ms) var(--ease-out, cubic-bezier(0.16,1,0.3,1)); background: var(--surface-2, #eceef1); color: var(--ink, #121417); } .ds-btn-soft:hover { background: var(--surface-3, #e2e5e9); } .ds-btn-soft:focus-visible { outline: 2px solid var(--ink, #121417); outline-offset: 2px; }"
+    },
+    {
+      "name": "Контурная кнопка (большая)",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "«Показать ещё», «Подробнее» для отеля, «Стать партнёром».",
+      "html": "<button class=\"ds-btn-line\" type=\"button\">Показать ещё 6</button>",
+      "css": ".ds-btn-line { font-family: var(--font, 'Onest Variable', 'Segoe UI', Roboto, Arial, sans-serif); display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border: 1px solid transparent; border-radius: var(--r-12, 12px); font-size: 0.9375rem; font-weight: 600; line-height: 1.2; white-space: nowrap; cursor: pointer; transition: background-color var(--t-fast, 150ms) var(--ease-out, cubic-bezier(0.16,1,0.3,1)), border-color var(--t-fast, 150ms) var(--ease-out, cubic-bezier(0.16,1,0.3,1)); min-height: 52px; padding: 0 24px; font-size: 1rem; background: var(--bg, #fff); border-color: var(--line-strong, #c9ced5); color: var(--ink, #121417); } .ds-btn-line:hover { border-color: var(--ink, #121417); } .ds-btn-line:focus-visible { outline: 2px solid var(--ink, #121417); outline-offset: 2px; }"
+    },
+    {
+      "name": "Строка поиска hero",
+      "kind": "input",
+      "refersTo": "hero-search",
+      "description": "Главное действие первого экрана: профессия, регион Турции, «Найти». Белая форма с плавающей тенью на красном поле.",
+      "html": "<div class=\"ds-hero-field\"><form class=\"ds-search\" role=\"search\" onsubmit=\"return false\"><label class=\"ds-search-q\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg><input type=\"search\" placeholder=\"Профессия или должность\" aria-label=\"Профессия или должность\"></label><label class=\"ds-search-reg\"><select aria-label=\"Регион Турции\"><option>Вся Турция</option><option>Анталья</option><option>Мугла</option></select><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 9 6 6 6-6\"/></svg></label><button class=\"ds-search-go\" type=\"submit\">Найти</button></form></div>",
+      "css": ".ds-hero-field { padding: 24px; border-radius: var(--r-24, 24px); background: var(--red-panel, #c9241b); } .ds-search { font-family: var(--font, 'Onest Variable', 'Segoe UI', Roboto, Arial, sans-serif); display: grid; grid-template-columns: minmax(0,1fr) 170px auto; align-items: center; gap: 4px; padding: 6px; border-radius: 16px; background: var(--bg, #fff); color: var(--ink, #121417); box-shadow: var(--shadow-float, 0 2px 4px rgb(18 20 23 / 0.08), 0 18px 40px -16px rgb(18 20 23 / 0.38)); } .ds-search-q { position: relative; display: flex; align-items: center; } .ds-search-q svg { position: absolute; left: 14px; color: var(--ink-3, #5f6570); pointer-events: none; } .ds-search-q input { width: 100%; min-height: 56px; padding: 0 12px 0 48px; border: 0; border-radius: 12px; background: transparent; font: inherit; font-size: 1.125rem; color: inherit; } .ds-search-q input::placeholder { color: var(--ink-3, #5f6570); } .ds-search-reg { position: relative; display: flex; align-items: center; height: 40px; border-left: 1px solid var(--line, #e3e6ea); } .ds-search-reg select { width: 100%; height: 56px; padding: 0 36px 0 16px; border: 0; border-radius: 12px; background: transparent; font: inherit; font-size: 1rem; color: inherit; appearance: none; cursor: pointer; } .ds-search-reg svg { position: absolute; right: 12px; color: var(--ink-3, #5f6570); pointer-events: none; } .ds-search-q input:focus-visible, .ds-search-reg select:focus-visible { outline: 2px solid var(--ink, #121417); outline-offset: -2px; } .ds-search-go { display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 0 30px; border: 0; border-radius: 12px; background: var(--ink, #121417); color: #fff; font: inherit; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.16,1,0.3,1); } .ds-search-go:hover { background: #2a2e34; } .ds-search-go:focus-visible { outline: 2px solid var(--red, #d42a20); outline-offset: 2px; }"
+    },
+    {
+      "name": "Быстрые чипы на красном",
+      "kind": "chip",
+      "refersTo": "chip-quick",
+      "description": "«Часто ищут»: капсулы на красной панели, выбранная белая с текстом red-ink.",
+      "html": "<div class=\"ds-quick\"><span>Часто ищут</span><button type=\"button\" aria-pressed=\"true\">Официант</button><button type=\"button\" aria-pressed=\"false\">Горничная</button><button type=\"button\" aria-pressed=\"false\">Повар</button></div>",
+      "css": ".ds-quick { font-family: var(--font, 'Onest Variable', 'Segoe UI', Roboto, Arial, sans-serif); display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 20px; border-radius: var(--r-24, 24px); background: var(--red-panel, #c9241b); font-size: 0.875rem; } .ds-quick > span { color: rgb(255 255 255 / 0.86); margin-right: 4px; } .ds-quick button { min-height: 34px; padding: 0 14px; border: 1px solid rgb(255 255 255 / 0.42); border-radius: 999px; background: rgb(255 255 255 / 0.08); color: #fff; font: inherit; font-weight: 500; cursor: pointer; transition: background-color 150ms cubic-bezier(0.16,1,0.3,1), border-color 150ms cubic-bezier(0.16,1,0.3,1); } .ds-quick button:hover { border-color: #fff; background: rgb(255 255 255 / 0.16); } .ds-quick button[aria-pressed=\"true\"] { border-color: #fff; background: #fff; color: var(--red-ink, #b3221a); font-weight: 650; } .ds-quick button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }"
+    },
+    {
+      "name": "Фильтры профессий",
+      "kind": "chip",
+      "refersTo": "chip-tab",
+      "description": "Ряд капсул над «Вакансиями дня»; выбранная — чёрная.",
+      "html": "<div class=\"ds-tabs\" role=\"group\" aria-label=\"Профессия\"><button type=\"button\" aria-pressed=\"true\">Все</button><button type=\"button\" aria-pressed=\"false\">Официант</button><button type=\"button\" aria-pressed=\"false\">Горничная</button><button type=\"button\" aria-pressed=\"false\">Ресепшен</button></div>",
+      "css": ".ds-tabs { font-family: var(--font, 'Onest Variable', 'Segoe UI', Roboto, Arial, sans-serif); display: flex; flex-wrap: wrap; gap: 8px; } .ds-tabs button { min-height: 40px; padding: 0 16px; border: 1px solid var(--line-strong, #c9ced5); border-radius: 999px; background: var(--bg, #fff); color: var(--ink, #121417); font: inherit; font-size: 0.9375rem; font-weight: 500; cursor: pointer; transition: background-color 150ms cubic-bezier(0.16,1,0.3,1), border-color 150ms cubic-bezier(0.16,1,0.3,1); } .ds-tabs button:hover { border-color: var(--ink, #121417); } .ds-tabs button[aria-pressed=\"true\"] { border-color: var(--ink, #121417); background: var(--ink, #121417); color: #fff; font-weight: 600; } .ds-tabs button:focus-visible { outline: 2px solid var(--ink, #121417); outline-offset: 2px; }"
+    },
+    {
+      "name": "Карточка вакансии",
+      "kind": "card",
+      "refersTo": "vacancy-card",
+      "description": "Сигнатура: метка «Пример», зарплата в ₺ и ≈ ₸, город, плашки условий с зелёными галочками, действие.",
+      "html": "<article class=\"ds-vcard\"><div class=\"ds-vcard-top\"><span class=\"ds-tag-demo\">Пример</span><span class=\"ds-vcard-date\">сегодня</span></div><h3 class=\"ds-vcard-title\"><button type=\"button\">Официант ресторана à la carte</button></h3><p class=\"ds-vcard-sal\">32 000 – 36 000 ₺ <span>в месяц</span></p><p class=\"ds-vcard-kzt\">≈ 384 000 – 432 000 ₸</p><p class=\"ds-vcard-where\"><span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg>Белек, Анталья</span></p><ul class=\"ds-vcard-conds\"><li class=\"is-ok\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg>Жильё: при отеле</li><li class=\"is-ok\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg>Питание: трёхразовое</li><li><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg>6/1, смены</li></ul><div class=\"ds-vcard-foot\"><span>4 места · Апрель – октябрь</span><button class=\"ds-vcard-cta\" type=\"button\">Откликнуться</button></div></article>",
+      "css": ".ds-vcard { font-family: var(--font, 'Onest Variable', 'Segoe UI', Roboto, Arial, sans-serif); display: flex; flex-direction: column; max-width: 380px; padding: 20px 20px 18px; border: 1px solid var(--line, #e3e6ea); border-radius: var(--r-16, 16px); background: var(--bg, #fff); color: var(--ink, #121417); transition: box-shadow 220ms cubic-bezier(0.16,1,0.3,1), border-color 220ms cubic-bezier(0.16,1,0.3,1); } .ds-vcard:hover { border-color: transparent; box-shadow: var(--shadow-card, 0 1px 2px rgb(18 20 23 / 0.06), 0 8px 24px -12px rgb(18 20 23 / 0.18)); } .ds-vcard-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; } .ds-vcard-date { color: var(--ink-3, #5f6570); font-size: 0.8125rem; } .ds-tag-demo { display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: var(--amber-soft, #fff1cc); color: var(--amber-ink, #6b4a00); font-size: 0.75rem; font-weight: 600; } .ds-vcard-title { margin: 12px 0 0; } .ds-vcard-title button { padding: 0; border: 0; background: none; color: var(--ink, #121417); font: inherit; font-size: 1.125rem; line-height: 1.3; font-weight: 650; letter-spacing: -0.01em; text-align: left; cursor: pointer; } .ds-vcard-title button:hover { color: var(--red-ink, #b3221a); text-decoration: underline; text-underline-offset: 3px; } .ds-vcard-sal { margin: 8px 0 0; font-size: 1.25rem; line-height: 1.25; font-weight: 700; letter-spacing: -0.01em; font-variant-numeric: tabular-nums lining-nums; } .ds-vcard-sal span { color: var(--ink-3, #5f6570); font-size: 0.875rem; font-weight: 450; letter-spacing: 0; } .ds-vcard-kzt { margin: 2px 0 0; color: var(--ink-2, #464c55); font-size: 0.875rem; font-variant-numeric: tabular-nums; } .ds-vcard-where { margin: 12px 0 0; color: var(--ink-2, #464c55); font-size: 0.875rem; } .ds-vcard-where span { display: inline-flex; align-items: center; gap: 6px; } .ds-vcard-where svg { color: var(--ink-3, #5f6570); } .ds-vcard-conds { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 0; padding: 0; list-style: none; } .ds-vcard-conds li { display: inline-flex; align-items: center; gap: 5px; min-height: 28px; padding: 0 10px; border-radius: 8px; background: var(--surface, #f4f5f7); color: var(--ink-2, #464c55); font-size: 0.8125rem; } .ds-vcard-conds li svg { color: var(--ink-3, #5f6570); } .ds-vcard-conds li.is-ok { background: var(--green-soft, #e6f4ec); color: var(--green, #127a45); font-weight: 550; } .ds-vcard-conds li.is-ok svg { color: var(--green, #127a45); } .ds-vcard-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-top: 18px; color: var(--ink-3, #5f6570); font-size: 0.8125rem; } .ds-vcard-cta { min-height: 44px; padding: 0 18px; border: 0; border-radius: 12px; background: var(--red, #d42a20); color: #fff; font: inherit; font-size: 0.9375rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.16,1,0.3,1); } .ds-vcard-cta:hover { background: var(--red-hover, #b3221a); } .ds-vcard-cta:focus-visible, .ds-vcard-title button:focus-visible { outline: 2px solid var(--ink, #121417); outline-offset: 2px; }"
+    },
+    {
+      "name": "Шапка и полоса аудиторий",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Туманная полоса аудиторий с красной чертой у активной, ниже белая липкая шапка: логотип, ссылки, «Войти», «Создать анкету».",
+      "html": "<div class=\"ds-nav\"><div class=\"ds-topbar\"><a href=\"#\" aria-current=\"true\">Кандидатам</a><a href=\"#\">Работодателям</a><a href=\"#\">Партнёрам</a></div><header class=\"ds-header\"><span class=\"ds-logo\">OPEN consulting</span><nav><a href=\"#\">Вакансии</a><a href=\"#\">Как это работает</a><a href=\"#\">Новости</a><a href=\"#\">Контакты</a></nav><span class=\"ds-header-act\"><button class=\"ds-hbtn-soft\" type=\"button\">Войти</button><button class=\"ds-hbtn-red\" type=\"button\">Создать анкету</button></span></header></div>",
+      "css": ".ds-nav { font-family: var(--font, 'Onest Variable', 'Segoe UI', Roboto, Arial, sans-serif); color: var(--ink, #121417); } .ds-topbar { display: flex; gap: 4px; padding: 0 16px; background: var(--surface, #f4f5f7); border-bottom: 1px solid var(--line, #e3e6ea); font-size: 0.875rem; } .ds-topbar a { display: inline-flex; align-items: center; min-height: 40px; padding: 0 10px; color: var(--ink-2, #464c55); text-decoration: none; } .ds-topbar a:hover { color: var(--ink, #121417); } .ds-topbar a[aria-current=\"true\"] { color: var(--ink, #121417); font-weight: 650; box-shadow: inset 0 -2px 0 var(--red, #d42a20); } .ds-header { display: flex; align-items: center; gap: 28px; min-height: 72px; padding: 0 16px; background: rgb(255 255 255 / 0.96); border-bottom: 1px solid var(--line, #e3e6ea); } .ds-logo { font-weight: 750; letter-spacing: -0.02em; color: var(--ink, #121417); } .ds-header nav { display: flex; gap: 2px; } .ds-header nav a { display: inline-flex; align-items: center; min-height: 40px; padding: 0 12px; border-radius: 8px; color: var(--ink, #121417); font-size: 0.9375rem; font-weight: 500; text-decoration: none; transition: background-color 150ms cubic-bezier(0.16,1,0.3,1); } .ds-header nav a:hover { background: var(--surface, #f4f5f7); } .ds-header a:focus-visible, .ds-topbar a:focus-visible, .ds-header button:focus-visible { outline: 2px solid var(--ink, #121417); outline-offset: 2px; } .ds-header-act { display: flex; gap: 8px; margin-left: auto; } .ds-hbtn-soft, .ds-hbtn-red { min-height: 44px; padding: 0 18px; border: 0; border-radius: 12px; font: inherit; font-size: 0.9375rem; font-weight: 600; cursor: pointer; } .ds-hbtn-soft { background: var(--surface-2, #eceef1); color: var(--ink, #121417); } .ds-hbtn-soft:hover { background: var(--surface-3, #e2e5e9); } .ds-hbtn-red { background: var(--red, #d42a20); color: #fff; } .ds-hbtn-red:hover { background: var(--red-hover, #b3221a); }"
+    },
+    {
+      "name": "Факты hero",
+      "kind": "custom",
+      "refersTo": "hero-panel",
+      "description": "Строка из трёх фактов-ссылок с иконкой круга-галочки внизу красного поля, ведут к «Как устроен найм».",
+      "html": "<ul class=\"ds-facts\"><li><a href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m9 12 2 2 4-4\"/></svg>Отели проверены</a></li><li><a href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m9 12 2 2 4-4\"/></svg>Собеседование с переводчиком</a></li><li><a href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m9 12 2 2 4-4\"/></svg>Сопровождение документов</a></li></ul>",
+      "css": ".ds-facts { font-family: var(--font, 'Onest Variable', 'Segoe UI', Roboto, Arial, sans-serif); display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 0; padding: 20px 24px; list-style: none; border-radius: var(--r-24, 24px); background: var(--red-panel, #c9241b); font-size: 0.875rem; font-weight: 550; } .ds-facts a { display: inline-flex; align-items: center; gap: 8px; min-height: 32px; color: #fff; text-decoration: none; } .ds-facts a:hover { text-decoration: underline; } .ds-facts a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; border-radius: 4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Красная вывеска над честным табло",
+    "overview": "Сайт выглядит как готовый официальный портал вакансий уровня HH и Enbek, а не как маркетинговый лендинг. Наверху — одна красная «вывеска»: hero-панель с крупным поиском профессии и региона. Под ней — «табло»: белые карточки вакансий, где зарплата, жильё, питание, график и язык стоят на одних и тех же местах в каждой карточке. Страница белая, секции разделены холодно-серыми полосами, текст почти чёрный. Красный работает как печать: им отмечены вывеска и главные действия, больше ничего.\n\nПлотность — порталная, не журнальная: фиксированная rem-шкала, сетка в три карточки, короткие строки, много одинаковых по форме элементов, которые легко сканировать с телефона при дневном свете. Тема только светлая — тёмного режима нет (так записано в `tokens.css`: кандидаты читают с телефона днём, HR отеля — в офисе). Фотографии — только реальные снимки с указанным автором и источником прямо на фото; изображения, созданные ИИ, запрещены (PRODUCT.md, Brand Commitments).\n\nПодтверждённые пользователем отказы: «шаблон Claude/AI-SaaS» и маркетинговая структура «hero + карточки преимуществ + главы»; все направления v1 (A/B/C) и 2.0 отклонены.",
+    "keyCharacteristics": [
+      "Поиск — главное действие: белая строка поиска на красной панели, на компьютере она заходит через шов на фотографию.",
+      "Одна гарнитура Onest Variable, иерархия весом (400–750) и фиксированной шкалой.",
+      "Красный только у hero-панели и главных действий; кнопка поиска чёрная.",
+      "В каждой вакансии зарплата в лирах и ≈ в тенге и строка условий с зелёными галочками.",
+      "Плоские карточки с тонкой границей, тень — только при наведении и у плавающих слоёв.",
+      "Вложенные радиусы 24 → 16 → 12 → 8 → 6; капсулы только у фильтров профессий.",
+      "Демонстрационный контент всегда несёт янтарную метку «Пример»."
+    ],
+    "rules": [
+      {
+        "name": "Правило красной вывески",
+        "body": "Красная заливка — только hero-панель и главные действия. Секции, карточки, плашки и фон никогда не красные. Кнопка поиска на красной панели — чёрная (`ink`): красная кнопка на красном поле исчезает.",
+        "section": "colors"
+      },
+      {
+        "name": "Правило зелёной галочки",
+        "body": "Зелёный означает «условие подтверждено» и ничего больше: не для кнопок, статусов отправки или украшений. Невыполненное условие остаётся на нейтральной плашке с серой иконкой.",
+        "section": "colors"
+      },
+      {
+        "name": "Правило метки «Пример»",
+        "body": "Любая выдуманная вакансия, новость или цифра на публичном сайте несёт янтарную метку «Пример». Янтарный не используется ни для чего другого.",
+        "section": "colors"
+      },
+      {
+        "name": "Правило логотипа",
+        "body": "`logo-red` живёт только в файле логотипа; интерфейс берёт `red`, `red-panel` или `red-ink`.",
+        "section": "colors"
+      },
+      {
+        "name": "Правило одной гарнитуры",
+        "body": "Onest Variable на всё — без второго семейства, без моноширинного шрифта, без fluid `clamp()` в размерах шрифта. Размеры меняются ступенькой на брейкпоинтах.",
+        "section": "typography"
+      },
+      {
+        "name": "Правило двух валют",
+        "body": "Зарплата всегда в лирах крупно и табличными цифрами, тенге — строкой ниже со знаком «≈» и меньшим серым кеглем. Курс пересчёта на сайте условный и подписан под списком.",
+        "section": "typography"
+      },
+      {
+        "name": "Правило поиска первым",
+        "body": "Первый экран любой роли начинается с поиска: строка поиска — самый крупный интерактивный элемент экрана. Когда она уходит из вида, в шапке плавно появляется компактная строка поиска.",
+        "section": "layout"
+      },
+      {
+        "name": "Правило плоскости в покое",
+        "body": "Карточки и строки в покое — без тени, только граница или фон. Тень появляется как ответ на наведение. Постоянную тень несут лишь три плавающих слоя: строка поиска hero, меню, диалог.",
+        "section": "elevation"
+      },
+      {
+        "name": "Правило вложенных радиусов",
+        "body": "Вложенный элемент всегда скруглён меньше, чем его контейнер: 24 → 16 → 12 → 8 → 6. Капсула не используется для кнопок действий.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** начинать каждый новый публичный экран с поиска или главного рабочего действия, как на HH и Enbek: крупная строка, профессия и регион, чёрная или красная кнопка.",
+      "**Do** брать цвета, размеры, радиусы и тени только из `tokens.css` (`--red`, `--ink-2`, `--r-16`, `--shadow-card` и т. д.); новый оттенок — сначала новый токен.",
+      "**Do** показывать в каждой вакансии зарплату в ₺ и ≈ в ₸, отель, город и плашки жилья, питания, графика и языка в одном и том же порядке.",
+      "**Do** ставить янтарную метку «Пример» на любой демонстрационный контент и подпись автора и источника на каждой фотографии.",
+      "**Do** держать цели касания не меньше 44 px и контраст текста не ниже WCAG AA; для красного текста на белом брать `red-ink`, не `red`.",
+      "**Do** проверять новые тексты на казахском и турецком: длина строк, буквы ӘҒҚҢӨҰҮҺІ и İıĞğŞşÇç, знаки ₸ и ₺."
+    ],
+    "donts": [
+      "**Don't** собирать страницу как маркетинговый лендинг «hero + карточки преимуществ + главы» или «шаблон Claude/AI-SaaS» — пользователь отклонил это во всех прежних раундах.",
+      "**Don't** заливать красным секции, карточки или фоны и не ставить красную кнопку на красную панель.",
+      "**Don't** использовать зелёный и янтарный вне их единственных ролей (подтверждённое условие и метка «Пример»).",
+      "**Don't** использовать изображения, созданные ИИ, и фотографии без проверенного источника и лицензии.",
+      "**Don't** придумывать показатели, отзывы, логотипы клиентов или названия отелей.",
+      "**Don't** возвращать IBM Plex Sans, Manrope, тёплый «травертин» и токены `src/homepage/styles/tokens.css` из отклонённой главной v1 в публичный сайт.",
+      "**Don't** добавлять тёмную тему, вторую гарнитуру или жёсткие смещённые тени."
+    ]
+  }
+}
