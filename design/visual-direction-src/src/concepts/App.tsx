@@ -6,11 +6,15 @@ import { Portal } from './portal/Portal';
 import { Guide } from './guide/Guide';
 import { Scenes } from './scenes/Scenes';
 
+const isDirection = (v: string | null): v is DirectionId => directions.some((x) => x.id === v);
+
+/** `?d=guide&role=hotel` locally; a bare `#guide` where only the hash survives (published preview). */
 function readParams(): { direction: DirectionId; role: Role } {
   const p = new URLSearchParams(window.location.search);
   const d = p.get('d');
+  const hash = window.location.hash.slice(1);
   return {
-    direction: directions.some((x) => x.id === d) ? (d as DirectionId) : 'portal',
+    direction: isDirection(d) ? d : isDirection(hash) ? hash : 'portal',
     role: p.get('role') === 'hotel' ? 'hotel' : 'candidate',
   };
 }
@@ -20,7 +24,11 @@ function writeParams(direction: DirectionId, role: Role) {
   p.set('d', direction);
   if (role === 'hotel') p.set('role', 'hotel');
   else p.delete('role');
-  window.history.replaceState(null, '', `${window.location.pathname}?${p.toString()}`);
+  try {
+    window.history.replaceState(null, '', `${window.location.pathname}?${p.toString()}`);
+  } catch {
+    // sandboxed frames may refuse history changes; the page state stays correct without the URL
+  }
 }
 
 export function App() {
