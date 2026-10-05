@@ -1,0 +1,343 @@
+/* ---------- audience bar ---------- */
+.topbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  font-size: var(--fs-14);
+}
+
+.topbar__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
+}
+
+.topbar__aud {
+  display: flex;
+  gap: 4px;
+  margin-left: -10px;
+}
+
+.topbar__aud a,
+.topbar__aud button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 10px;
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  text-decoration: none;
+  font-size: var(--fs-14);
+}
+
+.topbar__aud a:hover,
+.topbar__aud button:hover {
+  color: var(--ink);
+}
+
+.topbar__aud button[aria-pressed='true'] {
+  color: var(--ink);
+  font-weight: 650;
+  box-shadow: inset 0 -2px 0 var(--red);
+}
+
+.topbar__aside {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--ink-2);
+}
+
+.topbar__aside a {
+  color: var(--ink-2);
+  text-decoration: none;
+}
+
+.topbar__aside a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+.topbar__lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 32px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: var(--r-8);
+  background: none;
+  color: var(--ink-2);
+  font-size: var(--fs-14);
+  font-weight: 600;
+}
+
+.topbar__lang:hover,
+.topbar__lang[data-state='open'] {
+  background: var(--surface-2);
+  color: var(--ink);
+}
+
+.menu {
+  z-index: 70;
+  min-width: 200px;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-12);
+  background: var(--bg);
+  box-shadow: var(--shadow-pop);
+  font-family: var(--font);
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: var(--r-8);
+  font-size: var(--fs-15);
+  outline: none;
+  cursor: pointer;
+}
+
+.menu__item[data-highlighted] {
+  background: var(--surface);
+}
+
+.menu__soon {
+  color: var(--ink-3);
+  font-size: var(--fs-13);
+}
+
+/* ---------- main header ---------- */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgb(255 255 255 / 0.96);
+  border-bottom: 1px solid var(--line);
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  min-height: var(--header-h);
+}
+
+.header__brand {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  min-height: 44px;
+  border-radius: 6px;
+}
+
+.header__logo {
+  width: 132px;
+  height: auto;
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 2px;
+}
+
+.header__nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 12px;
+  border-radius: var(--r-8);
+  color: var(--ink);
+  font-size: var(--fs-15);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--t-fast) var(--ease-out);
+}
+
+.header__nav a:hover {
+  background: var(--surface);
+}
+
+.header__search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 360px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity var(--t-mid) var(--ease-out), transform var(--t-mid) var(--ease-out), visibility 0s linear var(--t-mid);
+}
+
+.header__search.is-on {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition: opacity var(--t-mid) var(--ease-out), transform var(--t-mid) var(--ease-out);
+}
+
+.header__search svg {
+  position: absolute;
+  left: 12px;
+  color: var(--ink-3);
+  pointer-events: none;
+}
+
+.header__search input {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 12px 0 38px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-12);
+  background: var(--bg);
+  font-size: var(--fs-15);
+}
+
+.header__search input::placeholder {
+  color: var(--ink-3);
+}
+
+.header__search input:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 0;
+  border-color: transparent;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.header__burger {
+  display: none;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: var(--r-12);
+  background: var(--surface-2);
+}
+
+/* ---------- phone sheet ---------- */
+.sheet {
+  position: fixed;
+  z-index: 81;
+  inset: 0 0 0 auto;
+  width: min(24rem, 100vw);
+  overflow: auto;
+  padding: 14px 20px 28px;
+  background: var(--bg);
+  font-family: var(--font);
+  animation: sheet-in var(--t-mid) var(--ease-out);
+}
+
+.sheet:focus {
+  outline: none;
+}
+
+.sheet__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+}
+
+.sheet__logo {
+  width: 120px;
+  height: auto;
+}
+
+.sheet__roles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  margin-top: 16px;
+  padding: 4px;
+  border-radius: var(--r-12);
+  background: var(--surface-2);
+}
+
+.sheet__roles button {
+  min-height: 40px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--ink-2);
+  font-size: var(--fs-15);
+  font-weight: 550;
+}
+
+.sheet__roles button[aria-pressed='true'] {
+  background: var(--bg);
+  color: var(--ink);
+  font-weight: 650;
+  box-shadow: 0 1px 2px rgb(18 20 23 / 0.12);
+}
+
+.sheet__nav {
+  margin-top: 12px;
+}
+
+.sheet__nav a {
+  display: flex;
+  align-items: center;
+  min-height: 52px;
+  border-bottom: 1px solid var(--line);
+  font-size: var(--fs-18);
+  font-weight: 550;
+  text-decoration: none;
+}
+
+.sheet__actions {
+  display: grid;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+@keyframes sheet-in {
+  from {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1179px) {
+  .header__search {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header__nav,
+  .header__cta {
+    display: none;
+  }
+
+  .header__burger {
+    display: grid;
+  }
+}
+
+@media (max-width: 767px) {
+  .topbar {
+    display: none;
+  }
+
+  .header__row {
+    min-height: 60px;
+    gap: 12px;
+  }
+
+  .header__logo {
+    width: 116px;
+  }
+}

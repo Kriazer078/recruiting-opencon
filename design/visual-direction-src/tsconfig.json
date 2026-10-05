@@ -17,5 +17,5 @@
     "noEmit": true,
     "types": ["vite/client"]
   },
-  "include": ["src/homepage", "src/concepts"]
+  "include": ["src/homepage", "src/concepts", "src/site"]
 }

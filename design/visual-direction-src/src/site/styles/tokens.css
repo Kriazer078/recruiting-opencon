@@ -1,0 +1,77 @@
+/*
+ * Open Consulting — public site tokens (3.0).
+ * Job-portal canon (HH, Enbek) with the brand's own red. Light, because candidates read on phones
+ * in daylight and hotel HR works in offices. One family, fixed rem scale.
+ */
+:root {
+  /* neutrals, slightly cool */
+  --bg: #ffffff;
+  --surface: #f4f5f7;       /* section ground */
+  --surface-2: #eceef1;     /* chips, soft buttons */
+  --surface-3: #e2e5e9;     /* pressed */
+  --line: #e3e6ea;
+  --line-strong: #c9ced5;
+  --ink: #121417;           /* 18.6:1 on white */
+  --ink-2: #464c55;         /* 8.9:1 on white */
+  --ink-3: #5f6570;         /* 5.9:1 on white, 5.4:1 on surface */
+
+  /* brand */
+  --red: #d42a20;           /* actions, white text 5.1:1 */
+  --red-hover: #b3221a;
+  --red-press: #9a1c15;
+  --red-panel: #c9241b;     /* hero field, white text 5.7:1 */
+  --red-panel-2: #b51f17;   /* hero field depth */
+  --red-ink: #b3221a;       /* red text on white 6.4:1 */
+  --red-soft: #fdecea;
+  --logo-red: #ec2a20;      /* logo only */
+
+  /* states */
+  --green: #127a45;         /* 5.4:1 on white */
+  --green-soft: #e6f4ec;
+  --amber-ink: #6b4a00;
+  --amber-soft: #fff1cc;
+
+  --on-red: #ffffff;
+  --on-red-2: rgb(255 255 255 / 0.86);
+
+  /* type */
+  --font: 'Onest Variable', 'Segoe UI', Roboto, Arial, sans-serif;
+  --fs-12: 0.75rem;
+  --fs-13: 0.8125rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
+  --fs-36: 2.25rem;
+  --fs-48: 3rem;
+
+  /* shape */
+  --r-8: 8px;
+  --r-12: 12px;
+  --r-16: 16px;
+  --r-24: 24px;
+
+  --shadow-card: 0 1px 2px rgb(18 20 23 / 0.06), 0 8px 24px -12px rgb(18 20 23 / 0.18);
+  --shadow-float: 0 2px 4px rgb(18 20 23 / 0.08), 0 18px 40px -16px rgb(18 20 23 / 0.38);
+  --shadow-pop: 0 4px 12px rgb(18 20 23 / 0.1), 0 24px 56px -20px rgb(18 20 23 / 0.35);
+
+  /* layout */
+  --max: 1280px;
+  --gutter: clamp(16px, 3vw, 32px);
+  --header-h: 72px;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 150ms;
+  --t-mid: 220ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-fast: 0ms;
+    --t-mid: 0ms;
+  }
+}

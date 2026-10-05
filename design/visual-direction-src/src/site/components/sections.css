@@ -1,0 +1,508 @@
+/* ---------- browse by profession and region ---------- */
+.browse {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 40px 48px;
+}
+
+.browse .h2 {
+  margin-bottom: 16px;
+}
+
+.browse__prof {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.browse__reg {
+  display: grid;
+  gap: 8px;
+}
+
+.browse a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 0 14px 0 18px;
+  border-radius: var(--r-12);
+  background: var(--bg);
+  color: var(--ink);
+  text-decoration: none;
+  transition: box-shadow var(--t-mid) var(--ease-out);
+}
+
+.browse a:hover {
+  box-shadow: var(--shadow-card);
+}
+
+.browse a svg {
+  color: var(--ink-3);
+}
+
+.browse__name {
+  font-size: var(--fs-16);
+  font-weight: 600;
+}
+
+.browse__sal,
+.browse__count {
+  color: var(--ink-2);
+  font-size: var(--fs-14);
+}
+
+.browse__note {
+  margin-top: 12px;
+  color: var(--ink-3);
+  font-size: var(--fs-13);
+}
+
+/* ---------- how hiring works ---------- */
+.how {
+  scroll-margin-top: calc(var(--header-h) + 8px);
+}
+
+.how__lead {
+  margin-top: 6px;
+}
+
+.how__steps {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  counter-reset: step;
+}
+
+.how__steps li {
+  position: relative;
+  padding-top: 52px;
+}
+
+/* the line that joins the steps */
+.how__steps li::before {
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: 44px;
+  right: -16px;
+  height: 2px;
+  background: var(--line);
+}
+
+.how__steps li:last-child::before {
+  display: none;
+}
+
+.how__num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  font-size: var(--fs-15);
+  font-weight: 700;
+}
+
+.how__steps p {
+  margin-top: 6px;
+  color: var(--ink-2);
+  font-size: var(--fs-15);
+  line-height: 1.5;
+}
+
+.how__cta-after {
+  display: none;
+}
+
+.how__bound {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-3);
+  font-size: var(--fs-14);
+}
+
+/* ---------- employers ---------- */
+.emp {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: 32px 56px;
+  padding: 48px;
+  border-radius: var(--r-24);
+  background: var(--ink);
+  color: #fff;
+}
+
+.emp :focus-visible {
+  outline-color: #fff;
+}
+
+.emp__title {
+  font-size: var(--fs-36);
+  line-height: 1.1;
+  font-weight: 750;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.emp__lead {
+  margin-top: 14px;
+  color: rgb(255 255 255 / 0.78);
+  font-size: var(--fs-16);
+  max-width: 44ch;
+}
+
+.emp__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.emp__ghost {
+  border-color: rgb(255 255 255 / 0.3);
+  background: transparent;
+  color: #fff;
+}
+
+.emp__ghost:hover {
+  border-color: #fff;
+}
+
+.emp__points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 32px;
+  align-content: center;
+}
+
+.emp__points li {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 8px;
+}
+
+.emp__points svg {
+  margin-top: 2px;
+  color: #fff;
+}
+
+.emp__points h3 {
+  font-size: var(--fs-16);
+  font-weight: 650;
+}
+
+.emp__points p {
+  margin-top: 4px;
+  color: rgb(255 255 255 / 0.74);
+  font-size: var(--fs-14);
+  line-height: 1.5;
+}
+
+/* ---------- news and the ad slot ---------- */
+.news {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 16px;
+}
+
+.news__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.news__list > li {
+  display: flex;
+}
+
+.ncard {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  border-radius: var(--r-16);
+  background: var(--bg);
+}
+
+.ncard__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  color: var(--ink-3);
+  font-size: var(--fs-13);
+}
+
+.ncard__rubric {
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: var(--surface-2);
+  color: var(--ink-2);
+  font-weight: 600;
+}
+
+.ncard__pin {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.ncard__title button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font-size: var(--fs-18);
+  line-height: 1.3;
+  font-weight: 650;
+  text-align: left;
+}
+
+.ncard__title button:hover {
+  color: var(--red-ink);
+  text-decoration: underline;
+}
+
+.ncard__lead {
+  color: var(--ink-2);
+  font-size: var(--fs-14);
+}
+
+.ncard .tag-demo {
+  margin-top: auto;
+}
+
+.ad__label {
+  color: var(--ink-3);
+  font-size: var(--fs-12);
+}
+
+.ad__plate {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 240px;
+  margin-top: 6px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-16);
+  background: var(--bg);
+}
+
+.ad__logo {
+  width: 116px;
+  height: auto;
+}
+
+.ad__plate p {
+  font-size: var(--fs-18);
+  line-height: 1.3;
+  font-weight: 650;
+}
+
+.ad__plate span {
+  margin-top: auto;
+  color: var(--ink-3);
+  font-size: var(--fs-13);
+}
+
+/* ---------- faq ---------- */
+.faq {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 24px 48px;
+}
+
+.faq__lead {
+  margin-top: 8px;
+}
+
+.faq__list {
+  border-top: 1px solid var(--line);
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq__q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  min-height: 64px;
+  padding: 12px 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font-size: var(--fs-18);
+  font-weight: 600;
+  text-align: left;
+}
+
+.faq__q svg {
+  flex-shrink: 0;
+  color: var(--ink-3);
+  transition: rotate var(--t-mid) var(--ease-out);
+}
+
+.faq__q[data-state='open'] svg {
+  rotate: 180deg;
+}
+
+.faq__q:hover {
+  color: var(--red-ink);
+}
+
+.faq__a p {
+  max-width: 64ch;
+  padding-bottom: 20px;
+  color: var(--ink-2);
+}
+
+/* ---------- partners ---------- */
+.partners {
+  padding-bottom: 56px;
+  scroll-margin-top: calc(var(--header-h) + 8px);
+}
+
+.partners__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  padding: 28px 32px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-16);
+}
+
+.partners__row p {
+  margin-top: 4px;
+  color: var(--ink-2);
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 1023px) {
+  .browse,
+  .faq {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .how__steps {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .how__steps li {
+    padding: 0 0 24px 56px;
+  }
+
+  .how__steps li::before {
+    top: 40px;
+    bottom: 4px;
+    left: 17px;
+    right: auto;
+    width: 2px;
+    height: auto;
+  }
+
+  .emp {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 36px 32px;
+  }
+
+  .news {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ad__plate {
+    min-height: 160px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-block: 40px;
+  }
+
+  .h2 {
+    font-size: var(--fs-24);
+  }
+
+  .browse__prof,
+  .browse__reg {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .browse a {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+    min-height: 0;
+    padding: 12px 14px;
+  }
+
+  .browse a svg {
+    display: none;
+  }
+
+  .browse__name {
+    font-size: var(--fs-15);
+  }
+
+  .browse__sal,
+  .browse__count {
+    font-size: var(--fs-13);
+  }
+
+  .how__cta {
+    display: none;
+  }
+
+  .how__cta-after {
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .emp {
+    padding: 28px 20px;
+    border-radius: var(--r-16);
+  }
+
+  .emp__title {
+    font-size: var(--fs-28);
+  }
+
+  .emp__points {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .emp__actions .btn {
+    width: 100%;
+  }
+
+  .news__list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .faq__q {
+    font-size: var(--fs-16);
+  }
+
+  .partners__row {
+    padding: 22px 20px;
+  }
+}
