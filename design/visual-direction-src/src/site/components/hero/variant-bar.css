@@ -1,0 +1,101 @@
+/* Review tool only: switches first-screen variants. Not part of the product UI. */
+.vbar {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: calc(100vw - 24px);
+  padding: 8px 8px 8px 16px;
+  translate: -50% 0;
+  border-radius: var(--r-16);
+  background: var(--ink);
+  color: #fff;
+  box-shadow: var(--shadow-pop);
+  font-size: var(--fs-14);
+}
+
+.vbar__note {
+  max-width: 26rem;
+  color: rgb(255 255 255 / 0.78);
+  line-height: 1.35;
+}
+
+.vbar__note strong {
+  color: #fff;
+  font-weight: 650;
+}
+
+.vbar__options {
+  display: flex;
+  gap: 4px;
+}
+
+.vbar button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: var(--r-12);
+  background: rgb(255 255 255 / 0.08);
+  color: #fff;
+  font-size: var(--fs-14);
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+.vbar button:hover {
+  background: rgb(255 255 255 / 0.16);
+}
+
+.vbar button[aria-pressed='true'] {
+  background: #fff;
+  color: var(--ink);
+}
+
+.vbar__letter {
+  font-weight: 750;
+}
+
+.vbar :focus-visible {
+  outline-color: #fff;
+}
+
+@media (max-width: 899px) {
+  .vbar__note {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .vbar {
+    left: 12px;
+    right: 12px;
+    translate: none;
+    padding: 6px;
+  }
+
+  .vbar__options {
+    width: 100%;
+  }
+
+  .vbar button {
+    flex: 1;
+    justify-content: center;
+    padding: 0 4px;
+    font-size: var(--fs-13);
+  }
+
+  /* letters only on phones: four options in one row */
+  .vbar button {
+    font-size: 0;
+  }
+
+  .vbar__letter {
+    font-size: var(--fs-15);
+  }
+}

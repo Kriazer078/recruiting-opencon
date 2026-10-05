@@ -1,0 +1,264 @@
+.hero-tiles {
+  padding-top: 48px;
+}
+
+.tiles-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 26rem);
+  align-items: end;
+  gap: 12px 48px;
+  margin-bottom: 28px;
+}
+
+.tiles-head__title {
+  font-size: 3.5rem;
+  line-height: 1.04;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.tiles-head__lead {
+  padding-bottom: 6px;
+  color: var(--ink-2);
+  font-size: var(--fs-18);
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+
+.hero-tiles .hs {
+  padding: 5px;
+}
+
+.hero-tiles .hs__q input {
+  min-height: 60px;
+  font-size: 1.25rem;
+}
+
+.hero-tiles .hs__region select {
+  height: 60px;
+}
+
+.hero-tiles .hs__submit {
+  min-height: 60px;
+  padding: 0 40px;
+  font-size: var(--fs-18);
+}
+
+.hero-tiles .facts {
+  margin-top: 14px;
+}
+
+/* ---------- Profession tiles ---------- */
+.ptiles {
+  margin-top: 44px;
+}
+
+.ptiles__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.ptiles__title {
+  font-size: var(--fs-20);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.ptiles__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 0.9fr);
+  gap: 16px;
+}
+
+.ptile {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  color: var(--ink);
+}
+
+.ptile__photo {
+  display: block;
+  aspect-ratio: 4 / 3;
+  margin-bottom: 8px;
+  border-radius: var(--r-16);
+  overflow: hidden;
+  background: var(--surface-2);
+}
+
+.ptile__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms var(--ease-out);
+}
+
+.ptile:hover .ptile__photo img {
+  transform: scale(1.03);
+}
+
+.ptile__name {
+  font-size: var(--fs-18);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.ptile:hover .ptile__name {
+  color: var(--red-ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.ptile__meta {
+  color: var(--ink-2);
+  font-size: var(--fs-14);
+}
+
+.ptile:focus-visible {
+  outline-offset: 4px;
+  border-radius: var(--r-16);
+}
+
+.ptiles__rest {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 18px 10px;
+  border-radius: var(--r-16);
+  background: var(--surface);
+}
+
+.ptiles__rest-title {
+  margin-bottom: 6px;
+  color: var(--ink-3);
+  font-size: var(--fs-14);
+  font-weight: 600;
+}
+
+.ptiles__rest button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 38px;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: none;
+  font-size: var(--fs-15);
+  font-weight: 550;
+  text-align: left;
+}
+
+.ptiles__rest li:last-child button {
+  border-bottom: 0;
+}
+
+.ptiles__rest button svg {
+  color: var(--ink-3);
+}
+
+.ptiles__rest button:hover {
+  color: var(--red-ink);
+}
+
+.ptiles__rest button:hover svg {
+  color: currentColor;
+}
+
+.ptiles__credit {
+  margin-top: 12px;
+  color: var(--ink-3);
+  font-size: var(--fs-12);
+}
+
+@media (max-width: 1179px) {
+  .tiles-head__title {
+    font-size: 2.75rem;
+  }
+
+  .ptiles__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .ptiles__rest {
+    grid-column: 1 / -1;
+  }
+
+  .ptiles__rest ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 24px;
+  }
+
+  .ptiles__rest button,
+  .ptiles__rest li:last-child button {
+    width: auto;
+    gap: 6px;
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 899px) {
+  .tiles-head {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-tiles {
+    padding-top: 16px;
+  }
+
+  .hero-tiles .rt {
+    margin-bottom: 22px;
+  }
+
+  .tiles-head {
+    margin-bottom: 20px;
+  }
+
+  .tiles-head__title {
+    font-size: 2rem;
+    line-height: 1.08;
+  }
+
+  .tiles-head__lead {
+    font-size: var(--fs-16);
+  }
+
+  .hero-tiles .hs__q input,
+  .hero-tiles .hs__region select,
+  .hero-tiles .hs__submit {
+    min-height: 52px;
+    height: auto;
+    font-size: var(--fs-16);
+  }
+
+  .hero-tiles .hs__region select {
+    height: 52px;
+  }
+
+  .ptiles {
+    margin-top: 32px;
+  }
+
+  .ptiles__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 12px;
+  }
+
+  .ptile__name {
+    font-size: var(--fs-16);
+  }
+
+  .ptile__meta {
+    font-size: var(--fs-13);
+  }
+}

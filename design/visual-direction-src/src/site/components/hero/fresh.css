@@ -1,0 +1,256 @@
+.hero-fresh {
+  padding-block: 56px 48px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.fresh {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  align-items: center;
+  gap: 40px 64px;
+}
+
+.fresh__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fresh__title {
+  max-width: 11em;
+  font-size: 3.5rem;
+  line-height: 1.04;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.fresh__lead {
+  max-width: 34em;
+  margin-top: 16px;
+  color: var(--ink-2);
+  font-size: var(--fs-18);
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+
+.hero-fresh .hs {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.hero-fresh .ql {
+  margin-top: 16px;
+}
+
+.hero-fresh .facts {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line-strong);
+  width: 100%;
+}
+
+/* ---------- Fresh vacancies ---------- */
+.fresh__list {
+  padding: 8px 8px 14px;
+  border-radius: var(--r-24);
+  background: var(--bg);
+  box-shadow: var(--shadow-card);
+}
+
+.fresh__list-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px 10px;
+}
+
+.fresh__list-title {
+  font-size: var(--fs-18);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.fresh__list ul li + li {
+  border-top: 1px solid var(--line);
+}
+
+.frow {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  border-radius: var(--r-12);
+  background: none;
+  text-align: left;
+  color: var(--ink);
+  transition: background-color var(--t-fast) var(--ease-out);
+}
+
+.frow:hover {
+  background: var(--surface);
+}
+
+.frow__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.frow__title {
+  font-size: var(--fs-16);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.frow:hover .frow__title {
+  color: var(--red-ink);
+}
+
+.frow__date {
+  flex-shrink: 0;
+  color: var(--ink-3);
+  font-size: var(--fs-13);
+}
+
+.frow__salary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 10px;
+  font-size: var(--fs-20);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.frow__kzt {
+  color: var(--ink-2);
+  font-size: var(--fs-14);
+  font-weight: 450;
+  letter-spacing: 0;
+}
+
+.frow__where {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ink-2);
+  font-size: var(--fs-14);
+}
+
+.frow__where svg {
+  flex-shrink: 0;
+  color: var(--ink-3);
+}
+
+.frow__conds {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.frow__conds span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: var(--r-8);
+  background: var(--green-soft);
+  color: var(--green);
+  font-size: var(--fs-13);
+  font-weight: 550;
+}
+
+.fresh__all {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 6px 16px 0;
+  min-height: 36px;
+  color: var(--red-ink);
+  font-size: var(--fs-15);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.fresh__all:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1179px) {
+  .fresh {
+    gap: 32px 40px;
+  }
+
+  .fresh__title {
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1179px) {
+  .hero-fresh .hs {
+    grid-template-columns: minmax(0, 1fr) 150px auto;
+  }
+}
+
+@media (max-width: 1023px) {
+  .fresh {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .fresh__list ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .fresh__list ul li + li {
+    border-top: 0;
+    border-left: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-fresh {
+    padding-block: 16px 32px;
+  }
+
+  .hero-fresh .rt {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+
+  .fresh__title {
+    font-size: 2rem;
+    line-height: 1.08;
+  }
+
+  .fresh__lead {
+    font-size: var(--fs-16);
+  }
+
+  .hero-fresh .hs {
+    margin-top: 22px;
+  }
+
+  .fresh__list {
+    margin-inline: calc(var(--gutter) * -0.5);
+    border-radius: var(--r-16);
+  }
+
+  .fresh__list ul {
+    display: block;
+  }
+
+  .fresh__list ul li + li {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .fresh__list ul li:nth-child(3) {
+    display: none;
+  }
+}

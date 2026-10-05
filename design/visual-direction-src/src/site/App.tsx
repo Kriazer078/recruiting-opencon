@@ -3,7 +3,7 @@ import type { Role } from './data/site';
 import type { Region } from './data/vacancies';
 import { NextStepProvider } from './components/NextStep';
 import { Header } from './components/Header';
-import { Hero } from './components/Hero';
+import { DEFAULT_HERO, Hero, HeroVariantBar, isHeroVariant, type HeroVariant } from './components/Hero';
 import { Vacancies } from './components/Vacancies';
 import { Browse, Employers, Faq, How, NewsAds, Partners } from './components/Sections';
 import { Footer } from './components/Footer';
@@ -16,8 +16,34 @@ function initialRole(): Role {
   }
 }
 
+function readParam(name: string) {
+  try {
+    return new URLSearchParams(window.location.search).get(name);
+  } catch {
+    return null;
+  }
+}
+
+function setParam(name: string, value: string | null) {
+  try {
+    const p = new URLSearchParams(window.location.search);
+    if (value === null) p.delete(name);
+    else p.set(name, value);
+    const q = p.toString();
+    window.history.replaceState(null, '', `${window.location.pathname}${q ? `?${q}` : ''}${window.location.hash}`);
+  } catch {
+    // sandboxed frames may refuse history changes
+  }
+}
+
 export function App() {
   const [role, setRole] = useState<Role>(initialRole);
+  const [variant, setVariant] = useState<HeroVariant>(() => {
+    const v = readParam('hero');
+    return isHeroVariant(v) ? v : DEFAULT_HERO;
+  });
+  // the comparison bar is a review tool: visible only when the address asks for it
+  const [comparing] = useState(() => readParam('hero') !== null || readParam('compare') === '1');
   const [draft, setDraft] = useState('');
   const [filter, setFilter] = useState<{ query: string; region: Region | 'all' }>({ query: '', region: 'all' });
   const [compact, setCompact] = useState(false);
@@ -35,15 +61,12 @@ export function App() {
 
   const changeRole = useCallback((r: Role) => {
     setRole(r);
-    try {
-      const p = new URLSearchParams(window.location.search);
-      if (r === 'hotel') p.set('role', 'hotel');
-      else p.delete('role');
-      const q = p.toString();
-      window.history.replaceState(null, '', `${window.location.pathname}${q ? `?${q}` : ''}${window.location.hash}`);
-    } catch {
-      // sandboxed frames may refuse history changes
-    }
+    setParam('role', r === 'hotel' ? 'hotel' : null);
+  }, []);
+
+  const changeVariant = useCallback((v: HeroVariant) => {
+    setVariant(v);
+    setParam('hero', v);
   }, []);
 
   const toVacancies = () => {
@@ -76,6 +99,7 @@ export function App() {
       <main id="main">
         <Hero
           ref={searchRef}
+          variant={variant}
           role={role}
           onRole={changeRole}
           query={draft}
@@ -93,6 +117,7 @@ export function App() {
         <Partners />
       </main>
       <Footer onRole={changeRole} />
+      {comparing && <HeroVariantBar value={variant} onChange={changeVariant} />}
     </NextStepProvider>
   );
 }

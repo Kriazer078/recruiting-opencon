@@ -1,0 +1,264 @@
+.hero-split {
+  padding-top: 20px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+  gap: 20px;
+}
+
+.split__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 44px 48px 40px;
+  border-radius: var(--r-24);
+  background: var(--surface);
+}
+
+/* audiences as a tab bar on top of the search, as on Enbek */
+.split__tabs {
+  display: inline-flex;
+  gap: 4px;
+  margin-bottom: 28px;
+  padding: 4px;
+  border-radius: var(--r-12);
+  background: var(--surface-3);
+}
+
+.split__tabs button {
+  min-height: 40px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--ink-2);
+  font-size: var(--fs-15);
+  font-weight: 550;
+  transition: background-color var(--t-fast) var(--ease-out), color var(--t-fast) var(--ease-out);
+}
+
+.split__tabs button:hover {
+  color: var(--ink);
+}
+
+.split__tabs button[aria-pressed='true'] {
+  background: var(--bg);
+  color: var(--ink);
+  font-weight: 650;
+  box-shadow: 0 1px 2px rgb(18 20 23 / 0.12);
+}
+
+.split__title {
+  max-width: 13em;
+  font-size: 3.25rem;
+  line-height: 1.05;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.split__lead {
+  max-width: 36em;
+  margin-top: 14px;
+  color: var(--ink-2);
+  font-size: var(--fs-18);
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+
+.hero-split .hs {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.hero-split .ql {
+  margin-top: 16px;
+}
+
+/* ---------- The other audience's door ---------- */
+.split__door {
+  display: grid;
+  grid-template-rows: minmax(180px, 1fr) auto;
+  border-radius: var(--r-24);
+  overflow: hidden;
+  background: var(--ink);
+  color: #fff;
+}
+
+.split__photo {
+  position: relative;
+  min-height: 180px;
+}
+
+.split__photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 68% 26%;
+}
+
+.split__photo .credit {
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+}
+
+.split__door-body {
+  display: grid;
+  gap: 16px;
+  padding: 24px 28px 28px;
+}
+
+.split__door-title {
+  font-size: var(--fs-24);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.split__points {
+  display: grid;
+  gap: 8px;
+  font-size: var(--fs-15);
+  color: rgb(255 255 255 / 0.86);
+}
+
+.split__points li {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 8px;
+}
+
+.split__points svg {
+  margin-top: 3px;
+  color: #fff;
+}
+
+.split__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  margin-top: 4px;
+}
+
+.split__switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  font-size: var(--fs-15);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgb(255 255 255 / 0.4);
+  text-underline-offset: 4px;
+}
+
+.split__switch:hover {
+  text-decoration-color: #fff;
+}
+
+.split__door :focus-visible {
+  outline-color: #fff;
+}
+
+@media (max-width: 1179px) {
+  .split {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  }
+
+  .split__main {
+    padding: 36px 36px 32px;
+  }
+
+  .split__title {
+    font-size: 2.5rem;
+  }
+
+  .hero-split .hs {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .hero-split .hs__region {
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .hero-split .hs__submit {
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 899px) {
+  .split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .split__door {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    grid-template-rows: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-split {
+    padding-top: 12px;
+  }
+
+  .split {
+    gap: 12px;
+  }
+
+  .split__main {
+    padding: 20px 18px 24px;
+    border-radius: var(--r-16);
+  }
+
+  .split__tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-bottom: 22px;
+  }
+
+  .split__title {
+    font-size: 2rem;
+    line-height: 1.08;
+  }
+
+  .split__lead {
+    font-size: var(--fs-16);
+  }
+
+  .hero-split .hs {
+    margin-top: 22px;
+  }
+
+  .split__door {
+    display: block;
+    border-radius: var(--r-16);
+  }
+
+  .split__photo {
+    height: 160px;
+  }
+
+  .split__door-body {
+    padding: 20px 18px 22px;
+  }
+
+  .split__door-title {
+    font-size: var(--fs-20);
+  }
+}
