@@ -43,7 +43,15 @@
 
 **Последнее указание пользователя:** три направления (включая A/B/C в DESIGN_DIRECTION.md) всё ещё похожи на AI-generated SaaS. Пересобрать 3 направления на уровне дизайнерской идеи, типографики, storytelling, layout logic и presentation model — не только цвет и композицию. **Первый экран — как у HH и Enbek** (переключатель ролей, крупный поиск профессии и города, поиск — главное действие). Работа продолжается в Claude Code cloud из `github.com/Kriazer078/recruiting-opencon` (приватный). Подробности — `docs/design/DESIGN_DECISIONS.md`.
 
-**Сделано после этого указания — направления 2.0 (5 октября 2026, Claude Code cloud):** `design/visual-direction-src/concepts.html`, исходники `src/concepts/`, просмотр `http://127.0.0.1:4182/home/concepts.html?d=portal|guide|scenes` (`&role=hotel` — режим отеля). Три целые главные: «Биржа» (каталог в духе HH), «Сопровождение» (паспорт услуги и маршрут в духе Enbek/eGov), «Лица» (кадры работы и формат видеопрезентации). Различаются моделью подачи, раскладкой, типографикой и способом рассказа; во всех первый экран HH/Enbek с поиском. **Ни одно не утверждено.** Рекомендация «Сопровождение» — предложение, не выбор. Ждём: выбор основы и решение D17 (пункты меню «Кандидатам/Работодателям» в «Лицах»). Описание — [DESIGN_DIRECTION.md](./docs/design/DESIGN_DIRECTION.md), реализация и проверка — [CONCEPTS.md](./design/product-map/home/CONCEPTS.md). Главная v1 не менялась.
+**История — направления 2.0 (5 октября 2026, отклонены пользователем):** `design/visual-direction-src/concepts.html`, исходники `src/concepts/`, просмотр `http://127.0.0.1:4182/home/concepts.html?d=portal|guide|scenes` (`&role=hotel` — режим отеля). Три целые главные: «Биржа» (каталог в духе HH), «Сопровождение» (паспорт услуги и маршрут в духе Enbek/eGov), «Лица» (кадры работы и формат видеопрезентации). Различаются моделью подачи, раскладкой, типографикой и способом рассказа; во всех первый экран HH/Enbek с поиском. **Ни одно не утверждено.** Рекомендация «Сопровождение» — предложение, не выбор. Описание — [DESIGN_DIRECTION.md](./docs/design/DESIGN_DIRECTION.md), реализация и проверка — [CONCEPTS.md](./design/product-map/home/CONCEPTS.md). Главная v1 не менялась.
+
+### Состояние: главная 3.0 (5 октября 2026, поздний вечер) — актуально
+
+**Последнее указание пользователя:** направления 2.0 отклонены целиком. Полная переделка: референс HH и Enbek, «как они, но своё, и чтобы было видно, что это готовый официальный продукт», без «шаблона Claude», использовать скиллы по дизайну. Гость видит вакансии; кандидат — первым. Отвечать кратко.
+
+- Дизайн-процесс — скилл **Impeccable** (`.claude/skills/impeccable`, `/impeccable`). Продуктовый контекст: [PRODUCT.md](./PRODUCT.md); визуальная система: [DESIGN.md](./DESIGN.md); контракт направления: `.impeccable/surfaces/design-visual-direction-src-src-site.md`.
+- Главная 3.0: `design/visual-direction-src/index.html` → `src/site/` (Onest, токены `src/site/styles/tokens.css`). v1 — `v1.html`, направления 2.0 — `concepts.html` (история).
+- Дизайн 3.0 ещё не утверждён пользователем. Записи в `docs/design/` про v1 и 2.0 — история.
 
 ### Как запустить
 
@@ -51,7 +59,7 @@
 cd design/visual-direction-src
 npm ci
 npm run check            # tsc typecheck + vite build → design/product-map/home
-python -m http.server 4182 -d ../product-map   # просмотр: http://127.0.0.1:4182/home/ и /home/concepts.html
+python -m http.server 4182 -d ../product-map   # главная 3.0: http://127.0.0.1:4182/home/ ; история: /home/v1.html, /home/concepts.html
 ```
 
 Фото на главной v1 загружаются с CDN Pexels (`src/homepage/data/media.ts`), нужен интернет. Первые экраны направлений 2.0 используют локальные копии фото; в облачном контейнере CDN Pexels заблокирован.
