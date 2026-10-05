@@ -1,0 +1,31 @@
+[
+  {
+    "family": "Manrope",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf",
+    "repository": "https://github.com/google/fonts/tree/main/ofl/manrope",
+    "local": "manrope.ttf",
+    "sample": "ӘҒҚҢӨҰҮҺІәғқңөұүһіİıĞğŞşÇçÖöÜüЁёЫыЯя",
+    "missing_characters": [
+      "Ә",
+      "Ғ",
+      "Қ",
+      "Ң",
+      "Ұ",
+      "ә",
+      "ғ",
+      "қ",
+      "ң",
+      "ұ"
+    ],
+    "licence": "SIL Open Font License"
+  },
+  {
+    "family": "IBM Plex Sans",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsans/IBMPlexSans%5Bwdth%2Cwght%5D.ttf",
+    "repository": "https://github.com/google/fonts/tree/main/ofl/ibmplexsans",
+    "local": "ibm-plex-sans.ttf",
+    "sample": "ӘҒҚҢӨҰҮҺІәғқңөұүһіİıĞğŞşÇçÖöÜüЁёЫыЯя",
+    "missing_characters": [],
+    "licence": "SIL Open Font License"
+  }
+]

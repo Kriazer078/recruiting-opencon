@@ -1,0 +1,92 @@
+/* ---------- Status mark ---------- */
+.status-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-small);
+  font-weight: var(--weight-medium);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.status-mark__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-mark--ready { color: var(--color-success); }
+.status-mark--ready .status-mark__icon { background: var(--color-success); color: #fff; }
+.status-mark--review { color: var(--color-warning); }
+.status-mark--review .status-mark__icon { background: var(--color-warning-soft); color: var(--color-warning); }
+.status-mark--missing { color: var(--color-danger); }
+.status-mark--missing .status-mark__icon { color: var(--color-danger); }
+
+.status-mark--night.status-mark--ready { color: #7fd1a4; }
+.status-mark--night.status-mark--ready .status-mark__icon { background: #7fd1a4; color: var(--color-night); }
+.status-mark--night.status-mark--review { color: var(--color-subtitle); }
+.status-mark--night.status-mark--review .status-mark__icon { background: transparent; color: var(--color-subtitle); }
+
+/* ---------- Language scale ---------- */
+.lang-scale {
+  display: grid;
+  grid-template-columns: 7rem auto 1fr;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: var(--text-small);
+}
+
+.lang-scale__name {
+  font-weight: var(--weight-medium);
+}
+
+.lang-scale__bar {
+  display: inline-flex;
+  gap: 3px;
+}
+
+.lang-scale__seg {
+  width: 1.5rem;
+  height: 0.375rem;
+  background: var(--color-surface-sunken);
+}
+
+.lang-scale__seg.is-on {
+  background: var(--color-fg);
+}
+
+.lang-scale__level {
+  color: var(--color-fg-muted);
+}
+
+/* ---------- Slot meter ---------- */
+.slot-meter {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-weight: var(--weight-medium);
+}
+
+.slot-meter__cells {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.slot-meter__cell {
+  width: 1rem;
+  height: 1rem;
+  border: 1.5px solid var(--color-fg);
+  transition: background-color var(--duration-quick) var(--ease-standard);
+}
+
+.slot-meter__cell.is-used {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.slot-meter--night .slot-meter__cell {
+  border-color: var(--color-on-night);
+}

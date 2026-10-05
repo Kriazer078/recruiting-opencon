@@ -1,0 +1,352 @@
+.profile__tabs-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-7);
+  border-bottom: var(--border-hairline);
+}
+
+.profile__tabs {
+  display: flex;
+  gap: var(--space-6);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.profile__tab {
+  position: relative;
+  min-height: 3rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: var(--text-body);
+  font-weight: var(--weight-medium);
+  color: var(--color-fg-subtle);
+  white-space: nowrap;
+}
+
+.profile__tab:hover {
+  color: var(--color-fg);
+}
+
+.profile__tab[data-state='active'] {
+  color: var(--color-fg);
+}
+
+.profile__tab::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transition: transform var(--duration-quick) var(--ease-standard);
+}
+
+.profile__tab[data-state='active']::after {
+  transform: scaleX(1);
+}
+
+.profile__tabs-row .demo-tag {
+  margin-bottom: var(--space-3);
+  white-space: normal;
+  line-height: 1.3;
+  padding-block: var(--space-1);
+}
+
+.profile__panel:focus-visible {
+  outline-offset: 8px;
+}
+
+/* ---------- Card ---------- */
+.profile-card {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--grid-gap);
+  row-gap: var(--space-8);
+  animation: panel-in var(--duration-moderate) var(--ease-standard);
+}
+
+.profile-card__media {
+  grid-column: 1 / -1;
+}
+
+.profile-card__sheet {
+  grid-column: 1 / -1;
+}
+
+.profile-card__img {
+  animation: media-in var(--duration-slow) var(--ease-standard);
+}
+
+.profile-card__caption {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-top: var(--space-11);
+}
+
+.profile-card__caption > span:last-child {
+  display: grid;
+}
+
+.profile-card__caption-sub {
+  color: var(--color-on-night-muted);
+}
+
+.profile-card__play {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--color-on-night);
+  color: var(--color-night);
+  flex-shrink: 0;
+}
+
+.profile-card__thumbs {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  align-items: end;
+}
+
+.thumb {
+  display: grid;
+  gap: var(--space-1);
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+}
+
+.thumb__frame {
+  opacity: 0.62;
+  transition: opacity var(--duration-instant) var(--ease-standard);
+}
+
+.thumb:hover .thumb__frame,
+.thumb.is-active .thumb__frame {
+  opacity: 1;
+}
+
+.thumb__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: var(--color-on-night);
+  color: var(--color-night);
+}
+
+.thumb__label {
+  font-size: var(--text-label);
+  color: var(--color-fg-subtle);
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.thumb.is-active .thumb__label {
+  color: var(--color-fg);
+  font-weight: var(--weight-medium);
+  border-color: var(--color-accent);
+}
+
+/* ---------- Sheet ---------- */
+.profile-card__head {
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--color-fg);
+}
+
+.profile-card__head h3 {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  font-size: var(--text-h2);
+  font-stretch: var(--width-heading);
+  letter-spacing: var(--tracking-heading);
+}
+
+.profile-card__city {
+  font-size: var(--text-body);
+  font-weight: var(--weight-regular);
+  font-stretch: 100%;
+  letter-spacing: 0;
+  color: var(--color-fg-muted);
+}
+
+.profile-card__professions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.profile-card__professions li {
+  padding: var(--space-1) var(--space-2);
+  border: var(--border-strong);
+  border-radius: var(--radius-1);
+  font-size: var(--text-small);
+  font-weight: var(--weight-medium);
+}
+
+.sheet {
+  margin: 0;
+}
+
+.sheet__row {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: var(--space-4);
+  padding-block: var(--space-4);
+  border-bottom: var(--border-hairline);
+}
+
+.sheet__row dt {
+  padding-top: 2px;
+  font-size: var(--text-label);
+  font-weight: var(--weight-medium);
+  color: var(--color-fg-subtle);
+}
+
+.sheet__row dd {
+  margin: 0;
+  min-width: 0;
+}
+
+.sheet__strong {
+  font-weight: var(--weight-semibold);
+}
+
+.sheet__list {
+  margin-top: var(--space-1);
+  font-size: var(--text-small);
+  color: var(--color-fg-muted);
+}
+
+.sheet__list li + li {
+  margin-top: var(--space-1);
+}
+
+.sheet__langs {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.sheet__checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+}
+
+.sheet__check {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.sheet__check svg {
+  color: var(--color-success);
+}
+
+.sheet__check.is-no svg {
+  color: var(--color-fg-subtle);
+}
+
+.sheet__docs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-4);
+}
+
+.profile-card__privacy {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+  color: var(--color-fg-muted);
+}
+
+.profile-card__privacy li {
+  display: grid;
+  grid-template-columns: 1.25rem 1fr;
+  gap: var(--space-2);
+}
+
+.profile-card__privacy svg {
+  margin-top: 2px;
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes media-in {
+  from {
+    opacity: 0.4;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile-card__media {
+    grid-column: 1 / span 6;
+  }
+
+  .profile-card__sheet {
+    grid-column: 7 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile-card__media {
+    grid-column: 1 / span 5;
+  }
+
+  .profile-card__sheet {
+    grid-column: 7 / -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile__tabs-row {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: var(--space-3);
+  }
+
+  .profile__tabs-row .demo-tag {
+    margin-bottom: 0;
+    align-self: flex-start;
+  }
+
+  .profile-card__thumbs {
+    grid-auto-flow: column;
+    grid-template-columns: none;
+    grid-auto-columns: 4.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: var(--space-1);
+  }
+
+}
+
+/* the sheet is narrow until the desktop grid: labels go above values */
+@media (max-width: 1023px) {
+  .sheet__row {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+}

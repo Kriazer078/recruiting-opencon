@@ -1,0 +1,248 @@
+.oneplace__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-bottom: var(--space-4);
+}
+
+.oneplace__note {
+  min-height: 3em;
+  padding-bottom: var(--space-4);
+  color: var(--color-fg-muted);
+  border-bottom: 1px solid var(--color-fg);
+}
+
+.oneplace__note.is-full {
+  color: var(--color-accent-text);
+}
+
+/* ---------- Offers ---------- */
+.offer {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-3) var(--space-5);
+  padding-block: var(--space-4);
+  border-bottom: var(--border-hairline);
+  transition: background-color var(--duration-quick) var(--ease-standard);
+}
+
+.offer__role {
+  font-weight: var(--weight-semibold);
+}
+
+.offer__hotel,
+.offer__when {
+  color: var(--color-fg-muted);
+}
+
+.offer__when {
+  display: grid;
+  gap: 2px;
+}
+
+.offer__soon {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--color-warning);
+  font-weight: var(--weight-medium);
+}
+
+.offer__action {
+  justify-self: end;
+}
+
+.offer__pair {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.offer__text-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  min-height: var(--target-min);
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: var(--text-small);
+  font-weight: var(--weight-medium);
+  color: var(--color-fg-muted);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border-strong);
+  text-underline-offset: 4px;
+}
+
+.offer__text-btn:hover {
+  color: var(--color-fg);
+  text-decoration-color: currentColor;
+}
+
+/* the square repeats the slot meter: empty — free, red — occupies a slot, ink — the one place */
+.offer__what {
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  column-gap: var(--space-3);
+  align-items: center;
+}
+
+.offer__what > p {
+  grid-column: 2;
+}
+
+.offer__slot {
+  grid-row: 1;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 1.5px solid var(--color-border-strong);
+  transition:
+    background-color var(--duration-quick) var(--ease-standard),
+    border-color var(--duration-quick) var(--ease-standard);
+}
+
+/* only rows that hold a slot show the square, so it never reads as a checkbox */
+.offer--new .offer__slot,
+.offer--declined .offer__slot,
+.offer--closed .offer__slot {
+  border-color: transparent;
+}
+
+.offer--approved .offer__slot {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.offer--chosen .offer__slot {
+  background: var(--color-fg);
+  border-color: var(--color-fg);
+}
+
+.offer--chosen .offer__role {
+  color: var(--color-accent-text);
+}
+
+.offer--declined .offer__what,
+.offer--closed .offer__what {
+  opacity: 0.55;
+}
+
+.offer__result {
+  font-size: var(--text-small);
+  font-weight: var(--weight-medium);
+  color: var(--color-fg-subtle);
+}
+
+.offer__result--chosen {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-accent-text);
+}
+
+.offer__confirm {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3) var(--space-5);
+  padding: var(--space-4);
+  background: var(--color-accent-soft);
+  animation: confirm-in var(--duration-quick) var(--ease-standard);
+}
+
+.offer__confirm p {
+  max-width: 46ch;
+}
+
+/* ---------- Hotel feed ---------- */
+.hotel-feed {
+  margin-top: var(--space-8);
+  padding: var(--space-5) var(--space-5) var(--space-3);
+  background: var(--color-surface-sunken);
+}
+
+.hotel-feed__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  min-height: var(--target-min);
+}
+
+.hotel-feed__head h3 {
+  color: var(--color-fg-muted);
+}
+
+.hotel-feed__empty {
+  padding-block: var(--space-3) var(--space-4);
+  color: var(--color-fg-muted);
+}
+
+.hotel-feed__list li {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: var(--space-3);
+  padding-block: var(--space-3);
+  border-top: 1px solid var(--color-border);
+  animation: confirm-in var(--duration-moderate) var(--ease-standard);
+}
+
+.hotel-feed__hotel {
+  font-size: var(--text-small);
+  font-weight: var(--weight-semibold);
+}
+
+@keyframes confirm-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 767px) {
+  .offer {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  /* everything under the role aligns to the text column, past the slot square */
+  .offer__when,
+  .offer__action {
+    padding-left: calc(1rem + var(--space-3));
+  }
+
+  .offer__when {
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: var(--space-3);
+  }
+
+  .offer__action {
+    justify-self: start;
+  }
+
+  .offer__pair {
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-4);
+  }
+
+  .offer__confirm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hotel-feed {
+    margin-inline: calc(var(--page-margin) * -1);
+    padding-inline: var(--page-margin);
+  }
+
+  .hotel-feed__list li {
+    grid-template-columns: 1fr;
+    gap: var(--space-1);
+  }
+}

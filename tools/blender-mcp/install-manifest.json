@@ -1,0 +1,10 @@
+{
+  "uv_version": "0.12.23",
+  "uv_source": "https://github.com/astral-sh/uv/releases/download/0.12.23/uv-x86_64-pc-windows-msvc.zip",
+  "uv_sha256": "75d05de6762778c31ee183398de7dd15093fad0ed90b1f236d8205ea5ec00c90",
+  "package": "mcp-for-blender",
+  "version": "2.1.3",
+  "package_source": "https://pypi.org/project/mcp-for-blender/",
+  "maintainer_source": "https://github.com/ahujasid/mcp-for-blender",
+  "created": "2026-10-05"
+}

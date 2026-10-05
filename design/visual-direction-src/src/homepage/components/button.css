@@ -1,0 +1,120 @@
+.btn {
+  --btn-height: 2.75rem; /* 44 */
+  --btn-pad: var(--space-5);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  min-height: var(--btn-height);
+  padding: 0 var(--btn-pad);
+  border: 1px solid transparent;
+  border-radius: var(--radius-2);
+  font-size: var(--text-body);
+  font-weight: var(--weight-medium);
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color var(--duration-instant) var(--ease-standard),
+    border-color var(--duration-instant) var(--ease-standard),
+    color var(--duration-instant) var(--ease-standard);
+}
+
+.btn--lg {
+  --btn-height: 3.25rem; /* 52 */
+  --btn-pad: var(--space-6);
+  font-size: var(--text-body-lg);
+}
+
+.btn--block {
+  width: 100%;
+}
+
+.btn__icon {
+  display: inline-flex;
+  transition: transform var(--duration-quick) var(--ease-standard);
+}
+
+.btn:hover .btn__icon {
+  transform: translateX(2px);
+}
+
+/* primary: one per view */
+.btn--primary {
+  background: var(--color-accent);
+  color: var(--color-accent-fg);
+}
+
+.btn--primary:hover {
+  background: var(--color-accent-hover);
+}
+
+/* secondary: ink outline */
+.btn--secondary {
+  background: transparent;
+  border-color: var(--color-fg);
+  color: var(--color-fg);
+}
+
+.btn--secondary:hover {
+  background: var(--color-fg);
+  color: var(--color-bg);
+}
+
+/* quiet: ink fill, for header registration and dense UI */
+.btn--quiet {
+  background: var(--color-fg);
+  color: var(--color-bg);
+}
+
+.btn--quiet:hover {
+  background: #000;
+}
+
+/* inverse: for night surfaces */
+.btn--inverse {
+  background: var(--color-on-night);
+  color: var(--color-night);
+}
+
+.btn--inverse:hover {
+  background: #fff;
+}
+
+/* link: text action with arrow, no underline on rest; underline on hover keeps affordance */
+.btn--link {
+  --btn-pad: 0;
+  min-height: var(--target-min);
+  background: none;
+  color: var(--color-fg);
+  gap: var(--space-2);
+}
+
+.btn--link .btn__label {
+  border-bottom: 1px solid var(--color-border-strong);
+  padding-bottom: 2px;
+  transition: border-color var(--duration-instant) var(--ease-standard);
+}
+
+.btn--link:hover .btn__label {
+  border-color: var(--color-fg);
+}
+
+.on-night .btn--link {
+  color: var(--color-on-night);
+}
+
+.on-night .btn--link .btn__label {
+  border-color: var(--color-night-border);
+}
+
+.btn:disabled,
+.btn[aria-disabled='true'] {
+  background: var(--color-surface-sunken);
+  border-color: transparent;
+  color: var(--color-fg-subtle);
+}
+
+.btn:disabled .btn__icon {
+  transform: none;
+}

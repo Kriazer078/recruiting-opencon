@@ -1,0 +1,138 @@
+.chapter {
+  padding-block: var(--section-gap);
+}
+
+.chapter + .chapter.chapter--paper {
+  border-top: var(--border-hairline);
+}
+
+.chapter--night {
+  background: var(--color-night);
+  color: var(--color-on-night);
+}
+
+.chapter__grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  column-gap: var(--grid-gap);
+  row-gap: var(--space-9);
+}
+
+.chapter__head {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chapter__body {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+
+.chapter__step {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+  color: var(--color-accent-text);
+}
+
+.chapter--night .chapter__step {
+  color: var(--color-on-night-accent);
+}
+
+.chapter__step-rule {
+  width: var(--space-7);
+  height: 1px;
+  background: currentColor;
+}
+
+.chapter__title {
+  max-width: 18ch;
+}
+
+.chapter__lead {
+  margin-top: var(--space-5);
+  max-width: var(--measure-narrow);
+  color: var(--color-fg-muted);
+}
+
+.chapter--night .chapter__lead {
+  color: var(--color-on-night-muted);
+}
+
+.chapter__sides {
+  display: grid;
+  gap: 0;
+  margin: var(--space-7) 0 0;
+  width: 100%;
+  max-width: 30rem;
+  border-top: var(--border-hairline);
+}
+
+.chapter--night .chapter__sides {
+  border-color: var(--color-night-border);
+}
+
+.chapter__sides > div {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: var(--space-4);
+  padding-block: var(--space-4);
+  border-bottom: var(--border-hairline);
+}
+
+.chapter--night .chapter__sides > div {
+  border-color: var(--color-night-border);
+}
+
+.chapter__sides dt {
+  color: var(--color-fg-subtle);
+  padding-top: 1px;
+}
+
+.chapter--night .chapter__sides dt {
+  color: var(--color-on-night-muted);
+}
+
+.chapter__sides dd {
+  margin: 0;
+}
+
+/* side layout: heading column + content column */
+@media (min-width: 1024px) {
+  .chapter--side .chapter__head {
+    grid-column: 1 / span 4;
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-7));
+    align-self: start;
+  }
+
+  .chapter--side .chapter__body {
+    grid-column: 6 / -1;
+  }
+
+  .chapter--stacked .chapter__head {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--grid-gap);
+    align-items: end;
+  }
+
+  .chapter--stacked .chapter__step,
+  .chapter--stacked .chapter__title {
+    grid-column: 1 / span 6;
+  }
+
+  .chapter--stacked .chapter__lead {
+    grid-column: 1 / span 6;
+  }
+
+  .chapter--stacked .chapter__sides {
+    grid-column: 8 / -1;
+    grid-row: 2 / span 2;
+    align-self: end;
+    margin-top: 0;
+  }
+}

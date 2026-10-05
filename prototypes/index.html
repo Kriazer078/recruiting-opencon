@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Open Consulting — три направления</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="app.js?v=4" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержимому</a>
+  <aside class="comparison" aria-label="Выбор прототипа">
+    <a href="?concept=0" class="compare-home" aria-label="Сравнить направления">◫</a>
+    <span class="comparison-label">Прототипы</span>
+    <a href="?concept=1" data-concept="1" aria-label="01 Открытая площадка">01<span>Открытая площадка</span></a>
+    <a href="?concept=2" data-concept="2" aria-label="02 Знакомство">02<span>Знакомство</span></a>
+    <a href="?concept=3" data-concept="3" aria-label="03 Рабочий кабинет">03<span>Рабочий кабинет</span></a>
+  </aside>
+  <div id="app"></div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+  <div id="status" role="status" aria-live="polite"></div>
+</body>
+</html>

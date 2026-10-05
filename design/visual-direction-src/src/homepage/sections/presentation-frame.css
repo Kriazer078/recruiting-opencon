@@ -1,0 +1,159 @@
+.pframe {
+  position: relative;
+  width: 100%;
+}
+
+.pframe__frame {
+  width: 100%;
+}
+
+.pframe .crop-image {
+  transition: transform var(--duration-slow) var(--ease-standard);
+}
+
+/* hotel view looks at the same person a little closer */
+.pframe--hotel .crop-image {
+  transform: scale(1.06);
+}
+
+.pframe__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.pframe__time {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  min-height: 1.5rem;
+  padding: 0 var(--space-2);
+  border-radius: var(--radius-1);
+  background: rgb(18 18 20 / 0.82);
+  font-size: var(--text-label);
+  font-weight: var(--weight-medium);
+  white-space: nowrap;
+}
+
+.pframe__play {
+  display: grid;
+  place-items: center;
+  width: var(--target-min);
+  height: var(--target-min);
+  border: 0;
+  border-radius: 50%;
+  background: rgb(18 18 20 / 0.82);
+  color: var(--color-on-night);
+  transition: background-color var(--duration-instant) var(--ease-standard);
+}
+
+.pframe__play:hover {
+  background: var(--color-night);
+}
+
+.pframe__caption {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.pframe__q-index {
+  color: var(--color-on-night-muted);
+}
+
+.pframe__q-text {
+  min-height: 2.7em;
+  font-size: var(--text-caption);
+  font-weight: var(--weight-medium);
+  line-height: 1.35;
+  text-wrap: balance;
+  animation: caption-in var(--duration-moderate) var(--ease-standard);
+}
+
+.pframe__segments {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+  margin-top: var(--space-2);
+}
+
+.pframe__seg {
+  position: relative;
+  height: 24px; /* hit area; the visible bar is 3px */
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.pframe__seg::before,
+.pframe__seg-fill {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 3px;
+  margin-top: -1.5px;
+}
+
+.pframe__seg::before {
+  background: rgb(242 239 233 / 0.28);
+}
+
+.pframe__seg-fill {
+  background: var(--color-on-night);
+  transform-origin: left center;
+}
+
+.pframe__seg.is-current .pframe__seg-fill {
+  background: var(--color-brand);
+}
+
+/* hotel perspective */
+.pframe__caption--profile {
+  gap: var(--space-1);
+}
+
+.pframe__name {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  animation: caption-in var(--duration-moderate) var(--ease-standard);
+}
+
+.pframe__city {
+  color: var(--color-on-night-muted);
+  font-weight: var(--weight-regular);
+}
+
+.pframe__professions {
+  color: var(--color-on-night);
+}
+
+.pframe__facts {
+  display: grid;
+  gap: var(--space-1);
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid rgb(242 239 233 / 0.18);
+}
+
+.pframe__facts > div {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  gap: var(--space-3);
+}
+
+.pframe__facts dt {
+  color: var(--color-on-night-muted);
+}
+
+.pframe__facts dd {
+  margin: 0;
+}
+
+@keyframes caption-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}

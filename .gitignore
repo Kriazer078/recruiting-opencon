@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# logs
+*.log
+
+# local machine tooling (Blender MCP runtime, caches, binaries)
+tools/blender-mcp/cache/
+tools/blender-mcp/*.exe
+tools/blender-mcp/connection-status.txt
+
+# presentation build intermediates (final files live in presentation/output)
+presentation/.build/
+presentation/.build-v2/
+presentation/.build-v4/
+presentation/.logo-fix/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
